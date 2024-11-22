@@ -1,0 +1,46 @@
+import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import { Navbar, Nav, Form } from "react-bootstrap";
+
+const CustomNavbar: React.FC = () => {
+  const [theme, setTheme] = useState<string>("light");
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      setTheme(storedTheme);
+      document.documentElement.setAttribute("data-theme", storedTheme);
+    }
+  }, []);
+
+  // Handle theme toggle
+  const handleThemeToggle = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme); // Save to local storage
+  };
+
+  return (
+    <Navbar bg="light" expand="lg" className="mb-4">
+      <Navbar.Brand href="/">Portfolio</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+          <Nav.Link href="#about">About</Nav.Link>
+          <Nav.Link href="#experience">Experience</Nav.Link>
+          <Nav.Link href="#projects">Projects</Nav.Link>
+        </Nav>
+        <Form.Check
+          type="switch"
+          id="theme-toggle"
+          label={theme === "light" ? "Light Mode" : "Dark Mode"}
+          onChange={handleThemeToggle}
+          checked={theme === "dark"}
+        />
+      </Navbar.Collapse>
+    </Navbar>
+  );
+};
+
+export default CustomNavbar;
