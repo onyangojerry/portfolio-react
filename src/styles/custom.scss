@@ -29,6 +29,12 @@ body {
   font-family: 'IBM Plex Mono', monospace;
 }
 
+.container {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 0 var(--navbar-bg);
+}
+
 .navbar {
   background-color: var(--navbar-bg);
 }
@@ -40,7 +46,7 @@ body {
 
 .btn-outline-secondary {
   color: var(--text-color);
-  border-color: var(var(--text-color));
+  border-color: var(--text-color);
 }
 
 h1, h2, h3, h4 {
@@ -54,29 +60,55 @@ h2 {
 
 .hero-section {
   margin-top: -25px; // Adjust for sticky Navbar
+
   .hero-banner {
     position: relative;
+    height: 200px;
+    background-color: #a11919;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+
     .banner-img {
       width: 100%; // Scales with viewport
-      height: 200px; // Proportional to viewport height
+      height: 100%; // Proportional to viewport height
       object-fit: cover; // Prevent distortion
     }
   }
 
   .profile-picture {
-    position: absolute;
-    bottom: -50px; // Overlaps the picture with the banner
-    left: 10%;
+    position: relative;
+    bottom: 125px; // Overlaps the picture with the banner
+    left: 15%;
     transform: translateX(-50%);
     z-index: 1;
+    background: transparent;
+    border: none;
+    
     img {
-      width: 12.5vw; // Scales with viewport width
-      height: 12.5vw;
+      width: 20vw; // Scales with viewport width
+      height: 20vw;
       border: 5px solid white;
       border-radius: 50%;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      margin: 0;
+      padding: 0;
     }
   }
+
+  @media (max-width: 768px) {
+    .profile-picture {
+      bottom: 75px; // Adjust overlap for smaller screens
+  
+      img {
+        width: 30vw; // Smaller size for narrower screens
+        height: 30vw;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  
 
   .hero-content {
     margin-top: -25vh; // Overlap profile picture with banner
@@ -84,8 +116,8 @@ h2 {
     font-family: 'IBM Plex Mono', monospace;
 
     .profile-picture {
-      width: 12.5vw; // Scales with the viewport height
-      height: 12.5vw;
+      width: 20vw; // Scales with the viewport height
+      height: 20vw;
       border: 0.1vw solid white;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     }
