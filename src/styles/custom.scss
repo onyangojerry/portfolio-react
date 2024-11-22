@@ -1,4 +1,6 @@
 @import 'bootstrap/scss/bootstrap'; // Optional, if using SCSS overrides
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 
 :root {
   /* Light Theme Colors */
@@ -7,6 +9,8 @@
   --navbar-bg: #f8f9fa;
   --button-bg: #0a66c2;
   --button-text: #ffffff;
+  --container-padding: 15px;
+  --max-content-width: 1200px;
 }
 
 [data-theme="dark"] {
@@ -22,6 +26,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .navbar {
@@ -36,6 +41,10 @@ body {
 .btn-outline-secondary {
   color: var(--text-color);
   border-color: var(var(--text-color));
+}
+
+h1, h2, h3, h4 {
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 h2 {
@@ -56,20 +65,23 @@ h2 {
 
   .profile-picture {
     position: absolute;
-    bottom: 100px; // Overlaps the picture with the banner
+    bottom: -50px; // Overlaps the picture with the banner
     left: 10%;
     transform: translateX(-50%);
     z-index: 1;
     img {
       width: 12.5vw; // Scales with viewport width
       height: 12.5vw;
-      border: 5px solid-white;
+      border: 5px solid white;
+      border-radius: 50%;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     }
   }
 
   .hero-content {
     margin-top: -25vh; // Overlap profile picture with banner
     text-align: left;
+    font-family: 'IBM Plex Mono', monospace;
 
     .profile-picture {
       width: 12.5vw; // Scales with the viewport height
@@ -80,6 +92,8 @@ h2 {
 
     h1 {
       font-size: 2rem;
+      font-weight: 700;
+      font-family: 'IBM Plex Mono', monospace;
       color: #0a66c2; // LinkedIn blue
     }
 
@@ -88,6 +102,15 @@ h2 {
       color: #6c757d; // Muted gray
     }
 
+    p {
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: 300;
+    }
+
+    em {
+      font-family: 'IBM Plex Mono', monospace;
+      font-style: italic;
+    }
     .hero-buttons button {
       font-size: 1rem;
       padding: 0.5rem 1.5rem;
