@@ -24,7 +24,11 @@ const ExperienceItem: React.FC<ExperienceProps> = ({
 );
 
 const ExperienceTimeline: React.FC = () => (
-  <section id="experience" className="my-4">
+  <section
+    id="experience"
+    className="my-4"
+    style={{ fontFamily: "'IBM Plex Mono', monospace" }}
+  >
     <h2>Experience</h2>
     <ExperienceItem
       role="Frontend Developer"

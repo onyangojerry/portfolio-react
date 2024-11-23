@@ -22,7 +22,12 @@ const CustomNavbar: React.FC = () => {
   };
 
   return (
-    <Navbar bg="light" expand="lg" className="mb-4">
+    <Navbar
+      bg={theme === "light" ? "light" : "dark"}
+      expand="lg"
+      className={`mb-4 ${theme === "dark" ? "navbar-dark" : "navbar-light"}`}
+      style={{ fontFamily: "'IBM Plex Mono', monospace" }}
+    >
       <Navbar.Brand href="/">Portfolio</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

@@ -8,7 +8,10 @@ interface ProjectProps {
 }
 
 const ProjectCard: React.FC<ProjectProps> = ({ title, description, link }) => (
-  <Card style={{ width: "18rem" }} className="mb-4">
+  <Card
+    style={{ width: "18rem", fontFamily: "'IBM Plex Mono', monospace" }}
+    className="mb-4"
+  >
     <Card.Body>
       <Card.Title>{title}</Card.Title>
       <Card.Text>{description}</Card.Text>
