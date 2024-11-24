@@ -22,16 +22,13 @@ const CustomNavbar: React.FC = () => {
   };
 
   return (
-    <Navbar
-      bg={theme === "light" ? "light" : "dark"}
-      expand="lg"
-      className={`mb-4 ${theme === "dark" ? "navbar-dark" : "navbar-light"}`}
-      style={{ fontFamily: "'IBM Plex Mono', monospace" }}
-    >
-      <Navbar.Brand href="/">Portfolio</Navbar.Brand>
+    <Navbar expand="lg" className="mb-4 custom-navbar">
+      <Navbar.Brand href="/" className="navbar-brand">
+        MyPortfolio
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
+        <Nav className="me-auto navbar-links">
           <Nav.Link href="#about">About</Nav.Link>
           <Nav.Link href="#experience">Experience</Nav.Link>
           <Nav.Link href="#projects">Projects</Nav.Link>
@@ -42,6 +39,7 @@ const CustomNavbar: React.FC = () => {
           label={theme === "light" ? "Light Mode" : "Dark Mode"}
           onChange={handleThemeToggle}
           checked={theme === "dark"}
+          className="theme-toggle"
         />
       </Navbar.Collapse>
     </Navbar>

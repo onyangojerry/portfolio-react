@@ -34,13 +34,38 @@ const ExperienceTimeline: React.FC = () => (
       role="Frontend Developer"
       company="TechCorp"
       duration="Jan 2020 - Dec 2022"
-      description="Developed modern UI components using React and integrated them with backend APIs."
+      description="Developed modern UI components using React and integrated them with backend APIs.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
+      dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
+      laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
+      Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
+      hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
+      convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imp Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
+      dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
+      laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
+      Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
+      hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
+      convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
+      mi.erdiet
+      mi."
     />
     <ExperienceItem
       role="Software Engineer"
       company="InnovateSoft"
       duration="Jan 2018 - Dec 2019"
-      description="Worked on full-stack solutions, optimizing application performance and scalability."
+      description="Worked on full-stack solutions, optimizing application performance and scalability. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
+      dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
+      laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
+      Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
+      hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
+      convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
+      mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
+      dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
+      laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
+      Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
+      hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
+      convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
+      mi."
     />
   </section>
 );

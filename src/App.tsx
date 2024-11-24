@@ -6,24 +6,20 @@ import AboutMe from "./components/AboutMe";
 import ExperienceTimeline from "./components/Experience";
 import ProjectsShowcase from "./components/Projects";
 import Footer from "./components/Footer";
-import { Container, Row, Col } from "react-bootstrap";
+import "./styles/custom.scss";
 
 const App: React.FC = () => (
-  <div>
+  <div className="app-container">
     <CustomNavbar />
     <Hero />
-    <Container className="mt-5 pt-5">
-      <Row>
-        <Col md={3}>
-          <Sidebar />
-        </Col>
-        <Col md={9}>
-          <AboutMe />
-          <ExperienceTimeline />
-          <ProjectsShowcase />
-        </Col>
-      </Row>
-    </Container>
+    <div className="content-wrapper">
+      <Sidebar />
+      <main className="main-content">
+        <AboutMe />
+        <ExperienceTimeline />
+        <ProjectsShowcase />
+      </main>
+    </div>
     <Footer />
   </div>
 );

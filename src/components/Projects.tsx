@@ -28,12 +28,57 @@ const ProjectsShowcase: React.FC = () => (
     <div className="d-flex flex-wrap justify-content-around">
       <ProjectCard
         title="Portfolio Website"
-        description="A personal portfolio built with React and TypeScript."
+        description="A personal portfolio built with React and TypeScript.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
+        dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
+        laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
+        Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
+        hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
+        convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
+        mi."
+        link="https://github.com"
+      />
+      <ProjectCard
+        title="Portfolio Website"
+        description="A personal portfolio built with React and TypeScript.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
+        dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
+        laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
+        Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
+        hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
+        convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
+        mi."
+        link="https://github.com"
+      />
+      <ProjectCard
+        title="Portfolio Website"
+        description="A personal portfolio built with React and TypeScript.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
+        dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
+        laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
+        Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
+        hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
+        convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
+        mi."
+        link="https://github.com"
+      />
+      <ProjectCard
+        title="Portfolio Website"
+        description="A personal portfolio built with React and TypeScript. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
+        dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
+        laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
+        Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
+        hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
+        convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
+        mi."
         link="https://github.com"
       />
       <ProjectCard
         title="E-commerce Platform"
-        description="A full-stack e-commerce solution with modern UI/UX."
+        description="A full-stack e-commerce solution with modern UI/UX. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
+        dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
+        laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
+        Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
+        hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
+        convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
+        mi."
         link="https://github.com"
       />
     </div>
