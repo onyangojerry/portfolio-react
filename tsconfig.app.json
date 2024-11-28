@@ -9,6 +9,10 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@styles/*": ["./src/styles/*"],
+    },
 
     /* Bundler mode */
     "moduleResolution": "node",

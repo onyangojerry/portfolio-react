@@ -1,12 +1,12 @@
 import React from "react";
-import CustomNavbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import Hero from "./components/Hero";
-import AboutMe from "./components/AboutMe";
-import ExperienceTimeline from "./components/Experience";
-import ProjectsShowcase from "./components/Projects";
-import Footer from "./components/Footer";
-import "./styles/custom.scss";
+import CustomNavbar from "./components/Navbar/Navbar";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Hero from "./components/HeroSection/HeroSection";
+import AboutMe from "./components/ABoutMe/AboutMe";
+import ExperienceTimeline from "./components/ExperienceTimeline/ExperienceTimeline";
+import ProjectsShowcase from "./components/Projects/Projects";
+import Footer from "./components/Footer/Footer";
+import "./styles/main.scss";
 
 const App: React.FC = () => (
   <div className="app-container">
