@@ -1,0 +1,6 @@
+@use './abstracts/variables';
+@use './themes/_themes.scss' as themes; // Adjust based on your themes structure
+@use './components' as *; // Imports all forwarded components
+
+// Add any additional global styles here
+@use './components/components' as *;

@@ -1,0 +1,51 @@
+@use '../../styles/abstracts' as *;
+
+.custom-navbar {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'IBM Plex Mono', monospace;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .custom-navbar .navbar-links .nav-link {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .custom-navbar .navbar-links .nav-link:hover,
+  .custom-navbar .navbar-links .nav-link:focus {
+    color: var(--heading-color);
+  }
+  
+  .custom-navbar .navbar-links .nav-link,
+  .custom-navbar .navbar-links .nav-link.active {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .custom-navbar .navbar-brand {
+    margin-right: 2.5rem;
+    color: var(--heading-color);
+    margin-left: 2.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  .custom-navbar .navbar-links .nav-link {
+    margin-right: 1rem;
+  }
+  
+  .custom-navbar .navbar-links .nav-link:hover {
+    color: var(--heading-color);
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: inherit;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: inherit;
+  }

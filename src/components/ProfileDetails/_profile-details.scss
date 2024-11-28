@@ -1,0 +1,60 @@
+// components/ProfileDetails/_profile-details.scss
+
+.hero-content {
+    text-align: left;
+    margin-top: 1rem; /* Adjust as needed */
+    padding: 0;
+  
+    .profile-info {
+      h1 {
+        font-size: var(--font-size-heading);
+        color: var(--heading-color);
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 700;
+      }
+  
+      h4 {
+        font-size: 0.9rem;
+        color: var(--text-color);
+        opacity: 0.75;
+      }
+  
+      p {
+        opacity: 0.99;
+      }
+  
+      .hero-buttons {
+        margin-top: 0.5rem; /* Adjust as needed */
+  
+        .btn-primary {
+          background-color: var(--button-bg);
+          color: var(--button-text);
+          border-color: var(--button-bg);
+          font-size: 1rem;
+          padding: 0.4rem 0.8rem;
+          margin-right: 1rem;
+          margin-left: -0.5rem;
+  
+          &:hover {
+            transform: translateY(-2.5px);
+            box-shadow: 0 10px 20px var(--box-shadow-color);
+            background-color: var(--button-bg);
+          }
+        }
+  
+        .btn-outline-secondary {
+          color: var(--text-color);
+          border-color: var(--border-color);
+          margin-right: 0.5rem;
+          font-size: 1rem;
+          padding: 0.4rem 0.8rem;
+  
+          &:hover {
+            transform: translateY(-2.5px);
+            background-color: var(--bg-color);
+            box-shadow: 0 10px 20px var(--box-shadow-color);
+          }
+        }
+      }
+    }
+  }

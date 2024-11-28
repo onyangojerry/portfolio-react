@@ -1,0 +1,66 @@
+
+.sidebar {
+    font-family: 'IBM Plex Mono',;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 250px;
+    flex-shrink: 0;
+  }
+  
+  .card-title, .card-subtitle, .card-text, .card-link {
+    color: var(--heading-color);
+  }
+  
+  .card-subtitle {
+    background-color: var(--bg-color);
+    opacity: 0.8;
+  }
+  
+  .section-title {
+    color: var(--text-color);
+    opacity: 0.8;
+  }
+  
+  .sidebar-card .card-link {
+    color: var(--text-color);
+  
+    &:hover {
+      color: var(--text-color);
+    }
+  }
+  
+  .sidebar-card img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .card.sidebar-card {
+    background-color: var(--bg-color);
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+  
+  /* Adjust padding inside the card */
+  .card.sidebar-card .card-body {
+    padding: 0.4rem;
+  }
+  
+  .card.sidebar-card .card-title {
+    font-size: var(--font-size-heading);
+    color: var(--heading-color);
+  }
+  
+  .card.sidebar-card .card-subtitle {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+  }
