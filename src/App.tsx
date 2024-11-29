@@ -1,4 +1,5 @@
 import React from "react";
+// import Layout from "./components/Layout/Layout";
 import CustomNavbar from "./components/Navbar/Navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Hero from "./components/HeroSection/HeroSection";

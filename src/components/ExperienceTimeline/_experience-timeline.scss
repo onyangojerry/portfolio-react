@@ -10,13 +10,14 @@
       font-size: var(--font-size-heading);
       color: var(--heading-color);
       margin-bottom: 1.5rem;
+      font-weight: 600;
     }
   
     .experience-item {
       margin-bottom: 1.5rem; // Spacing between experience items
       padding: 1rem;
-      background-color: var(--card-bg);
-      border: 1px solid var(--border-color);
+      background-color: var(--bg-color);
+      border: 0.1px solid var(--border-color);
       border-radius: 8px;
   
       h4 {

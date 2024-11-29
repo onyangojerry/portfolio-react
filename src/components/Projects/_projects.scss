@@ -1,63 +1,67 @@
+.projects-section {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  border: 1px solid red;
+}
 
-.projects {
-    background-color: var(--bg-color);
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.projects-section h2 {
+  border: 1px solid slateblue;
+  font-size: var(--font-size-heading);
+  font-weight: 500;
+  color: var(--heading-color);
+}
+
+
+.project-card {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+
+  .btn {
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: var(--button-text);
   }
-  
-  .projects-section {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    padding: 0rem;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px var(--box-shadow-color);
+  background-color: var(--card-color);
+
+  .btn {
+    transition: opacity 0.15s;
+    opacity: 1;
   }
-  
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .project-card {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    border-radius: 10px;
-    border: 1px solid var(--border-color);
-    padding: 1rem;
-    transition: transform 0.2s, box-shadow 0.2s;
-    display: flex;
-    flex-direction: column;
-  
-    .btn {
-      opacity: 0;
-      transition: opacity 0.3s;
-      color: var(--button-text);
-    }
-  }
-  
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px var(--box-shadow-color);
-    background-color: var(--card-bg);
-  
-    .btn {
-      transition: opacity 0.3s;
-      opacity: 1;
-    }
-  }
-  
-  .project-card .card-body {
-    padding: 0;
-  }
-  
-  .project-card h3 {
-    color: var(--heading-color);
-  }
-  
-  .project-card p {
-    color: var(--text-color);
-  }
-  
-  .project-card a {
-    color: var(--button-bg);
-  }
-  
-  
-  
+}
+
+.project-card .card-body {
+  padding: 0;
+}
+
+.project-card h3 {
+  color: var(--heading-color);
+}
+
+.project-card p {
+  color: var(--text-color);
+}
+
+.project-card a {
+  color: var(--button-bg);
+}
+
+

@@ -51,9 +51,9 @@ const projects = [
 ];
 
 const ProjectsShowcase: React.FC = () => (
-  <section id="projects" className="projects-section my-4">
+  <section id="custom-projects" className="projects-section my-4">
     <h2>Projects</h2>
-    <Row className="g-4 justify-content-left">
+    <Row className="g-4 justify-content-left project grid">
       {projects.map((project, index) => (
         <Col key={index} xs={12} sm={6} md={6} lg={4} xl={3}>
           <ProjectCard

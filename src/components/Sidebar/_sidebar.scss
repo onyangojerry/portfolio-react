@@ -10,12 +10,15 @@
     box-sizing: border-box;
     width: 250px;
     flex-shrink: 0;
+    border: 0.1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: var(--font-size-body);
   }
   
   .card-title, .card-subtitle, .card-text, .card-link {
     color: var(--heading-color);
   }
-  
+
   .card-subtitle {
     background-color: var(--bg-color);
     opacity: 0.8;
@@ -32,6 +35,7 @@
     &:hover {
       color: var(--text-color);
     }
+    font-size: 1rem;
   }
   
   .sidebar-card img {
@@ -51,16 +55,14 @@
   
   /* Adjust padding inside the card */
   .card.sidebar-card .card-body {
-    padding: 0.4rem;
+    padding: 0.5rem;
   }
   
   .card.sidebar-card .card-title {
-    font-size: var(--font-size-heading);
+    margin-top: 5px;
+    font-size: var(--font-size-subheading);
     color: var(--heading-color);
+    font-weight: 500;
+    margin-left: 1rem;
   }
   
-  .card.sidebar-card .card-subtitle {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-color);
-  }

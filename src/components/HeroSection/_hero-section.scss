@@ -1,6 +1,4 @@
-
 .hero-section {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +9,11 @@
     height: auto;
     box-sizing: border-box;
     padding: 0.8rem;
-    min-height: 250px;
+    min-height: 100px;
+    margin-top: -20px;
+    border-bottom: 0.1px solid var(--border-color);
+    border-radius: 8px;
+    border-top: 0.1px solid var(--border-color);
     
     .hero-banner {
       position: relative;
@@ -21,24 +23,23 @@
       .banner-img {
        width: 100%; // Scales with viewport
        height: 100%; // Proportional to viewport height
-       max-height: 250px;
+       max-height: 150px;
        object-fit: cover; // Prevent distortion
        display: block;
-       border: 1px solid purple;
       }
     }
 
     .profile-picture {
         border: 2px solid var(--text-color);
         position: absolute;
-        bottom: 50px; // Overlaps the picture with the banner
+        bottom: 8px; // Overlaps the picture with the banner
         left: 7.5%;
         transform: translateX(-50%);
         background: transparent;
         border-radius: 50%;
         overflow: hidden;
-        width: 20%;
-        height: 60%;
+        width: 60%;
+        height: 90%;
         max-width: 150px;
         img {
             width: 100%; // Scales with viewport width
@@ -55,6 +56,6 @@
             width: 25%; /* Increase size on smaller screens if needed */
             max-width: 100px;
             bottom: 5%; // Adjust for smaller screens
-     }
-   }
+        }
+    }
 }
