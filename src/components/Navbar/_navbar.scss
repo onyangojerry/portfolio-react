@@ -22,14 +22,14 @@
   .custom-navbar .navbar-links .nav-link,
   .custom-navbar .navbar-links .nav-link.active {
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: var(--font-size-body);
     font-weight: 450;
   }
   
   .custom-navbar .navbar-brand {
-    margin-right: 2.5rem;
+    margin-right: 1.5rem;
     color: var(--heading-color);
-    margin-left: 2.5rem;
+    margin-left: 0.5rem;
     font-size: 2rem;
     font-weight: 700;
   }

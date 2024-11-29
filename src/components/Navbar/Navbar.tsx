@@ -25,14 +25,15 @@ const CustomNavbar: React.FC = () => {
   return (
     <Navbar expand="lg" className="mb-4 custom-navbar">
       <Navbar.Brand href="/" className="navbar-brand">
-        MyPortfolio
+        Bmmasi
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto navbar-links">
-          <Nav.Link href="#about">About</Nav.Link>
+          <Nav.Link href="#about">Who Am I? </Nav.Link>
           <Nav.Link href="#experience">Experience</Nav.Link>
           <Nav.Link href="#projects">Projects</Nav.Link>
+          <Nav.Link href="#projects">Hobbies</Nav.Link>
         </Nav>
         <Form.Check
           type="switch"

@@ -6,7 +6,6 @@
   border-radius: 8px;
   border-top: 0.1px solid var(--border-color);
   border-bottom: 0.1px solid var(--border-color);
-  border-left: 0.1px solid var(--border-color);
 }
 
 .project-grid {
@@ -16,8 +15,8 @@
 }
 
 .projects-section h2 {
-  font-size: var(--font-size-heading);
-  font-weight: 600;
+  font-size: var(--font-size-subheading);
+  font-weight: 700;
   color: var(--heading-color);
 }
 
@@ -35,6 +34,7 @@
   flex-direction: column;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  margin: 2.5px;
 
   .btn {
     opacity: 0;
@@ -43,13 +43,13 @@
   }
 
   h3 {
-    font-size: var(--font-size-subheading);
+    font-size: var(--font-size-subsubheading);
   }
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px var(--box-shadow-color);
+  box-shadow: 0 3px 6px var(--box-shadow-color);
   background-color: var(--card-color);
 
   .btn {
@@ -72,6 +72,12 @@
 
 .project-card a {
   color: var(--button-bg);
+}
+
+.projects-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1px 2px var(--box-shadow-color);
+  background-color: var(--bg-color);
 }
 
 

@@ -19,34 +19,40 @@ const ProjectCard: React.FC<ProjectProps> = ({ title, description, link }) => (
 
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "Personal Portfolio",
     description:
       "A personal portfolio built with React and TypeScript. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com/branley1",
+    link: "https://github.com/branley1/portfolio-react",
   },
   {
-    title: "Portfolio Website",
+    title: "Sentimental Analysis with GRUs",
     description:
-      "A personal portfolio built with React and TypeScript. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com/branley1",
+      "Predicting emotions with Gated Recurrent Units. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
+    link: "https://github.com/branley1/Predicting-emotions-with-GRUs.git",
   },
   {
-    title: "Palantir Orb",
+    title: "Multi-label Classification with k-Nearest Neighbor",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com/branley1",
+      "Multi-label Classification with k-Nearest Neighbor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
+    link: "https://github.com/branley1/Multi-label-Classification-with-k-Nearest-Neighbor.git",
   },
   {
-    title: "Porland Security",
+    title: "iOS Flashcard App",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com/branley1",
+      "A fully-functional iOS Flashcard app build using Swift and Xcode. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
+    link: "https://github.com/branley1/flashcard-update.git",
   },
   {
-    title: "Another one",
+    title: "CodePath.org",
     description:
-      "A personal portfolio built with React and TypeScript. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com/branley1",
+      "Built iOS apps as part of CodePath.org iOS Mobile Design Course. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
+    link: "https://github.com/branley1/codepath-iOS.git",
+  },
+  {
+    title: "Custom Project",
+    description:
+      "A custom project intended to be built with <language 1> and <language 2>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
+    link: "https://github.com/branley1/",
   },
 ];
 
