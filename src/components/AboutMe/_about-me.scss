@@ -1,0 +1,24 @@
+// src/components/AboutMe/_about-me.scss
+
+.about-me {
+  font-family: 'IBM Plex Mono', monospace; // Moved from inline style
+  padding: 1rem; // Adjust padding as needed
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-left: 0.1px solid var(--border-color);
+  border-top: 0.1px solid var(--border-color);
+  border-radius: 8px;
+
+  h2 {
+    font-size: var(--font-size-heading);
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: var(--font-size-body);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+}
