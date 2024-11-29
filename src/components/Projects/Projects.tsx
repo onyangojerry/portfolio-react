@@ -22,31 +22,31 @@ const projects = [
     title: "Portfolio Website",
     description:
       "A personal portfolio built with React and TypeScript. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com",
+    link: "https://github.com/branley1",
   },
   {
     title: "Portfolio Website",
     description:
       "A personal portfolio built with React and TypeScript. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com",
+    link: "https://github.com/branley1",
   },
   {
     title: "Palantir Orb",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com",
+    link: "https://github.com/branley1",
   },
   {
     title: "Porland Security",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com",
+    link: "https://github.com/branley1",
   },
   {
     title: "Another one",
     description:
       "A personal portfolio built with React and TypeScript. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com",
+    link: "https://github.com/branley1",
   },
 ];
 

@@ -10,10 +10,11 @@
     box-sizing: border-box;
     padding: 0.8rem;
     min-height: 100px;
-    margin-top: -20px;
-    border-bottom: 0.1px solid var(--border-color);
+    margin-top: -15px;
+    border-right: 0.1px solid var(--border-color);
     border-radius: 8px;
     border-top: 0.1px solid var(--border-color);
+    border-left: 0.1px solid var(--border-color);
     
     .hero-banner {
       position: relative;
@@ -30,16 +31,16 @@
     }
 
     .profile-picture {
-        border: 2px solid var(--text-color);
+        border: 2.5px solid white;
         position: absolute;
-        bottom: 8px; // Overlaps the picture with the banner
+        bottom: 4px; // Overlaps the picture with the banner
         left: 7.5%;
         transform: translateX(-50%);
         background: transparent;
         border-radius: 50%;
         overflow: hidden;
         width: 60%;
-        height: 90%;
+        height: 95%;
         max-width: 150px;
         img {
             width: 100%; // Scales with viewport width

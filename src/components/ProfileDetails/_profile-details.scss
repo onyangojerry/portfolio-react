@@ -3,8 +3,10 @@
 .hero-content {
     text-align: left;
     margin-top: 1rem; /* Adjust as needed */
-    padding: 0;
+    padding: 1rem;
     font-family: 'IBM Plex Mono', monospace;
+    border-radius: 8px;
+    border-bottom: 0.1px solid var(--border-color);
   
     .profile-info {
       h1 {

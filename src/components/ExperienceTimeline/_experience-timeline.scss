@@ -5,6 +5,10 @@
     padding: 1rem; // Adjust padding as needed
     background-color: var(--bg-color);
     color: var(--text-color);
+    border-radius: 8px;
+    border-top: 0.1px solid var(--border-color);
+    border-bottom: 0.1px solid var(--border-color);
+    
   
     h2 {
       font-size: var(--font-size-heading);
@@ -17,8 +21,11 @@
       margin-bottom: 1.5rem; // Spacing between experience items
       padding: 1rem;
       background-color: var(--bg-color);
-      border: 0.1px solid var(--border-color);
+      border-bottom: 0.1px solid var(--border-color);
       border-radius: 8px;
+      border-top: 0.1px solid var(--border-color);
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
   
       h4 {
         font-size: 1.25rem;

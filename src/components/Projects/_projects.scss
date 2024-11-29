@@ -3,6 +3,10 @@
   color: var(--text-color);
   padding: 1rem;
   font-family: 'IBM Plex Mono', monospace;
+  border-radius: 8px;
+  border-top: 0.1px solid var(--border-color);
+  border-bottom: 0.1px solid var(--border-color);
+  border-left: 0.1px solid var(--border-color);
 }
 
 .project-grid {
@@ -13,25 +17,33 @@
 
 .projects-section h2 {
   font-size: var(--font-size-heading);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--heading-color);
 }
 
 
 .project-card {
+  margin-top: 5px;
   background-color: var(--bg-color);
   color: var(--text-color);
   border-radius: 10px;
-  border: 1px solid var(--border-color);
+  border-top: 0.1px solid var(--border-color);
+  border-bottom: 0.1px solid var(--border-color);
   padding: 1rem;
   transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
   flex-direction: column;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 
   .btn {
     opacity: 0;
     transition: opacity 0.3s;
     color: var(--button-text);
+  }
+
+  h3 {
+    font-size: var(--font-size-subheading);
   }
 }
 
