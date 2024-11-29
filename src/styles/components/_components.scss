@@ -1,10 +1,10 @@
 // styles/components/_components.scss
 
-@import '../../components/Navbar/_navbar';
-@import '../../components/ProfileDetails/_profile-details';
-@import '../../components/Sidebar/_sidebar';
-@import '../../components/Footer/_footer';
-@import '../../components/Buttons/_buttons';
-@import '../../components/Cards/_cards';
-@import '../../components/Projects/_projects';
-@import '../../components/Skills/_skills';
+@use '../../components/Navbar/_navbar';
+@use '../../components/ProfileDetails/_profile-details';
+@use '../../components/Sidebar/_sidebar';
+@use '../../components/Footer/_footer';
+@use '../../components/Buttons/_buttons';
+@use '../../components/Cards/_cards';
+@use '../../components/Projects/_projects';
+@use '../../components/Skills/_skills';
