@@ -1,50 +1,121 @@
-# React + TypeScript + Vite
+# **Bmmasi's Portfolio**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi there! 👋 
 
-Currently, two official plugins are available:
+This project serves as my digital space to showcase who I am, what I do, and the projects I've either worked on or been a part of. It's built with modern web technologies and a focus on clean design, responsiveness, and accessibility.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## **Table of Contents**
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [How to Run Locally](#how-to-run-locally)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Future Enhancements](#future-enhancements)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## **Overview**
+This portfolio reflects my skills, experience, and passions. Here's what it includes:
+- A hero section introducing myself.
+- A sidebar showcasing my technical skills and course highlights.
+- Detailed sections like **About Me**, **Experience Timeline**, and **Projects**.
+- Clean and intuitive navigation to help visitors find what they are looking for.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Explore the live version here: [**Bmmasi's Portfolio**](https://bmmasi.netlify.app)
+
+---
+
+## **Features**
+- **Responsive Design**: Optimized for all screen sizes (mobile, tablet, desktop).
+- **Sticky Sidebar**: (TODO): Stays in view when scrolling, making navigation seamless.
+- **Accessible**: Designed with accessibility in mind, including proper contrast, alt text, and semantic HTML.
+- **Hero Section**: Full-screen intro with a friendly yet professional touch.
+- **Interactive Projects Section**: Displays featured projects with links to GitHub and live demos.
+- **Modern Styling**: Built with SCSS for clean and maintainable code.
+
+---
+
+## **Tech Stack**
+Here’s what I used to bring this project to life:
+- **Frontend Framework**: React (TypeScript)
+- **Styling**: SCSS (with theming support)
+- **Hosting**: Netlify (with a custom domain)
+- **UI Library**: React Bootstrap
+- **Icons & Assets**: Icons8, Unsplash, Hero Patterns
+
+---
+
+## **Project Structure**
+```plaintext
+src/
+├── components/
+│   ├── Navbar/         # Navigation bar
+│   ├── HeroSection/    # Hero section
+│   ├── Layouts/        # Layout section
+│   ├── Sidebar/        # Sticky sidebar with skills & course highlights
+│   ├── AboutMe/        # About me section
+│   ├── ExperienceTimeline/ # Timeline for experiences
+│   ├── Projects/       # Project showcase
+│   ├── Footer/         # Footer with links
+├── styles/
+│   ├── main.scss       # Global styles and variables
+│   ├── _layout.scss    # Layout-specific styles
+│   ├── _sidebar.scss   # Sidebar-specific styles
+├── App.tsx             # Main app file
+├── index.tsx           # Entry point
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## **How to Run Locally**
+Want to see the code in action? Here's how to get the project up and running:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/branley1/portfolio-react.git
+   cd portfolio-react
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm start
+   ```
+
+4. Open your browser and navigate to [http://localhost:5173](http://localhost:5173).
+
+---
+
+## **Deployment**
+This portfolio is hosted on **Netlify** using a custom domain. Here’s how updates are deployed:
+
+1. Push code changes to the GitHub repository.
+2. Netlify automatically builds and deploys the latest version.
+
+---
+
+## **Credits**
+- **Design Inspiration**: Modern portfolio designs and LinkedIn.
+- **Images**: Sourced from Google Search and private photos (https://www.google.com/).
+
+---
+
+## **Future Enhancements**
+- Add a blog section to share my insights and experiences.
+- Add a hobbies section for music, 3D dev, Game dev etc.
+- Dynamic animations for a more interactive feel.
+- An expanded project showcase with in-depth case studies.
+
+---
+
+## **License** 
+
+MIT License
