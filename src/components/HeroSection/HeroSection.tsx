@@ -1,17 +1,20 @@
 import React from "react";
 import ProfileDetails from "../ProfileDetails/ProfileDetails";
 import "/src/components/HeroSection/_hero-section.scss";
+import heroImage from "../../assets/images/hero/hero-image.jpg";
+import profileImage from "../../assets/images/profile/profile.jpeg";
 
 const HeroSection: React.FC = () => (
   <section className="hero-section">
     <div className="hero-banner">
       <img
-        src="https://via.placeholder.com/1200x300"
+        src={heroImage}
         alt="Banner"
         className="banner-img"
+        loading="eager"
       />
       <div className="profile-picture">
-        <img src="https://via.placeholder.com/300" alt="Profile" />
+        <img src={profileImage} alt="Profile" className="dp" loading="eager" />
       </div>
     </div>
     {/* Include ProfileDetails within Hero */}

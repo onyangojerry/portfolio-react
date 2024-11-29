@@ -1,7 +1,6 @@
 import React from "react";
-// import Layout from "./components/Layout/Layout";
+import Layout from "./components/Layouts/Layout";
 import CustomNavbar from "./components/Navbar/Navbar";
-import Sidebar from "./components/Sidebar/Sidebar";
 import Hero from "./components/HeroSection/HeroSection";
 import AboutMe from "./components/AboutMe/AboutMe";
 import ExperienceTimeline from "./components/ExperienceTimeline/ExperienceTimeline";
@@ -13,14 +12,11 @@ const App: React.FC = () => (
   <div className="app-container">
     <CustomNavbar />
     <Hero />
-    <div className="content-wrapper">
-      <Sidebar />
-      <main className="main-content">
-        <AboutMe />
-        <ExperienceTimeline />
-        <ProjectsShowcase />
-      </main>
-    </div>
+    <Layout>
+      <AboutMe />
+      <ExperienceTimeline />
+      <ProjectsShowcase />
+    </Layout>
     <Footer />
   </div>
 );

@@ -4,8 +4,6 @@
   padding: 1rem;
   font-family: 'IBM Plex Mono', monospace;
   border-radius: 8px;
-  border-top: 0.1px solid var(--border-color);
-  border-bottom: 0.1px solid var(--border-color);
 }
 
 .project-grid {
@@ -26,8 +24,6 @@
   background-color: var(--bg-color);
   color: var(--text-color);
   border-radius: 10px;
-  border-top: 0.1px solid var(--border-color);
-  border-bottom: 0.1px solid var(--border-color);
   padding: 1rem;
   transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
@@ -75,8 +71,7 @@
 }
 
 .projects-section:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 1px 2px var(--box-shadow-color);
+  transform: translateY(-1px);
   background-color: var(--bg-color);
 }
 

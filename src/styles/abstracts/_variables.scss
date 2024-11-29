@@ -2,7 +2,7 @@
 
 :root {
     /* Light Theme Colors */
-    --bg-color: #F0F0F0;
+    --bg-color: #d3dde2; // E3F4F4 light blue-ish // F0F0F0 original color
     --text-color: #000000;
     --navbar-bg: var(--bg-color);
     --button-bg: #0a66c2;
@@ -29,7 +29,7 @@
    
    [data-theme="dark"] {
     /* Dark Theme Colors */
-    --bg-color: #0d1117;
+    --bg-color: #161b22; // 0d1117 original Github dark
     --text-color: #f5f5f5;
     --navbar-bg: var(--bg-color);
     --button-bg: #1f77d0;

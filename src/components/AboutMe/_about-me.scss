@@ -2,11 +2,9 @@
 
 .about-me {
   font-family: 'IBM Plex Mono', monospace;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: var(--bg-color);
   color: var(--text-color);
-  border-bottom: 0.1px solid var(--border-color);
-  border-top: 0.1px solid var(--border-color);
   border-radius: 8px;
 
   h2 {
@@ -21,10 +19,4 @@
     line-height: 1.6;
     margin-bottom: 0.5rem;
   }
-}
-
-.about-me:hover {
-  transform: translateY(-2.5px);
-  box-shadow: 0 1px 2px var(--box-shadow-color);
-  background-color: var(--bg-color);
 }

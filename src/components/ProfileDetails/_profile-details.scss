@@ -2,15 +2,16 @@
 
 .hero-content {
     text-align: left;
-    margin-top: 1rem; /* Adjust as needed */
-    padding: 1rem;
+    margin-top: 0.5rem; /* Adjust as needed */
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
     font-family: 'IBM Plex Mono', monospace;
     border-radius: 8px;
-    border-bottom: 0.1px solid var(--border-color);
   
     .profile-info {
       h1 {
-        font-size: var(--font-size-heading);
+        font-size: var(--font-size-subheading);
         color: var(--heading-color);
         font-weight: 700;
       }

@@ -1,14 +1,19 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import "/src/components/Sidebar/_sidebar.scss";
+import "./_sidebar.scss";
+
+import profileImage from "../../assets/images/sidebar/sidebargif.webp";
+import courseImage from "../../assets/images/sidebar/education.jpg";
 
 const Sidebar: React.FC = () => (
   <div className="sidebar">
     <Card className="sidebar-card">
       <Card.Img
         variant="top"
-        src="https://via.placeholder.com/150"
+        src={profileImage}
         alt="Profile"
+        className="sidebar-profile-image"
+        loading="eager"
       />
       <Card.Body>
         <Card.Title>Technical Skills</Card.Title>
@@ -45,6 +50,13 @@ const Sidebar: React.FC = () => (
             </span>
           </li>
         </ul>
+        <Card.Img
+          variant="top"
+          src={courseImage}
+          alt="Profile"
+          className="sidebar-course-image"
+          loading="eager"
+        />
         <Card.Title>Course Highlight</Card.Title>
         <ul className="course-highlight">
           <li>Data Structures and Algorithms</li>
