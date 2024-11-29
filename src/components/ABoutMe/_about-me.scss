@@ -5,6 +5,9 @@
   padding: 1rem; // Adjust padding as needed
   background-color: var(--bg-color);
   color: var(--text-color);
+  border-left: 0.1px solid var(--border-color);
+  border-top: 0.1px solid var(--border-color);
+  border-radius: 8px;
 
   h2 {
     font-size: var(--font-size-heading);

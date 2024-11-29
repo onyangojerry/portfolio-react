@@ -10,7 +10,9 @@
     box-sizing: border-box;
     width: 250px;
     flex-shrink: 0;
-    border: 0.1px solid var(--border-color);
+    border-right: 0.1px solid var(--border-color);
+    border-bottom: 0.1px solid var(--border-color);
+    border-left: 0.1px solid var(--border-color);
     border-radius: 8px;
     font-size: var(--font-size-body);
   }
