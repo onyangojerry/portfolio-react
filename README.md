@@ -1,4 +1,4 @@
-# **Bmmasi Porttal**
+# **Bmmasi Portal**
 
 Hi! 
 
