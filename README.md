@@ -1,6 +1,6 @@
 # **Bmmasi's Portfolio**
 
-Hi there! 👋 
+Hi! 
 
 This project serves as my digital space to showcase who I am, what I do, and the projects I've either worked on or been a part of. It's built with modern web technologies and a focus on clean design, responsiveness, and accessibility.
 
@@ -19,13 +19,13 @@ This project serves as my digital space to showcase who I am, what I do, and the
 ---
 
 ## **Overview**
-This portfolio reflects my skills, experience, and passions. Here's what it includes:
+This portfolio reflects my skills, experience, and passions. It includes:
 - A hero section introducing myself.
 - A sidebar showcasing my technical skills and course highlights.
 - Detailed sections like **About Me**, **Experience Timeline**, and **Projects**.
 - Clean and intuitive navigation to help visitors find what they are looking for.
 
-Explore the live version here: [**Bmmasi's Portfolio**](https://bmmasi.netlify.app)
+Explore the live version here: [**Bmmasi Portal**](https://bmmasi.com)
 
 ---
 
@@ -40,7 +40,6 @@ Explore the live version here: [**Bmmasi's Portfolio**](https://bmmasi.netlify.a
 ---
 
 ## **Tech Stack**
-Here’s what I used to bring this project to life:
 - **Frontend Framework**: React (TypeScript)
 - **Styling**: SCSS (with theming support)
 - **Hosting**: Netlify (with a custom domain)
@@ -99,6 +98,8 @@ This portfolio is hosted on **Netlify** using a custom domain. Here’s how upda
 
 1. Push code changes to the GitHub repository.
 2. Netlify automatically builds and deploys the latest version.
+
+Here's the latest live version: [Bmmasi Portal](https://bmmasi.netlify.app).
 
 ---
 
