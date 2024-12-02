@@ -5,7 +5,7 @@
     margin-top: 0.5rem; /* Adjust as needed */
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    padding: 0.5rem;
+    padding-left: 0rem;
     font-family: 'IBM Plex Mono', monospace;
     border-radius: 8px;
   
@@ -24,6 +24,7 @@
   
       p {
         opacity: 0.99;
+        padding-left: 0.25rem;
       }
   
       .hero-buttons {

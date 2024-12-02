@@ -12,14 +12,16 @@ const ProfileDetails: React.FC = () => (
         Developer{" "}
       </h4>
       <p>
-        Passionate developer specializing in web applications and cutting-edge
-        technologies. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac
-        dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis
-        placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam,
-        fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor
-        eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel
-        imperdiet mi.
+        I'm a rising senior at Swarthmore College and as a Computer Science
+        major with a Cognitive Science minor, my interests span AI/ML, NLP,
+        computational linguistics, and full-stack development.
+      </p>
+      <p>
+        I intend to use natural language processing to identify knowledge
+        implicit in large collections of text and apply this knowledge to build
+        innovative applications. This way, I want to finesse human-computer
+        interactions and create a proper understanding between machines and
+        humans.
       </p>
       <div className="hero-buttons mt-3">
         <Button

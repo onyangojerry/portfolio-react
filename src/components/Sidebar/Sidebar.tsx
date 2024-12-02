@@ -1,9 +1,10 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, CardTitle } from "react-bootstrap";
 import "./_sidebar.scss";
 
 import profileImage from "../../assets/images/sidebar/sidebargif.webp";
 import courseImage from "../../assets/images/sidebar/education.jpg";
+import lastImage from "../../assets/images/sidebar/qr-code.png";
 
 const Sidebar: React.FC = () => (
   <div className="sidebar">
@@ -28,7 +29,7 @@ const Sidebar: React.FC = () => (
             <strong>Languages: </strong>
             <span>
               C++, C, Python, Swift, HTML5, CSS, JavaScript, React Native, R,
-              GoLang, TypeScript
+              GoLang, TypeScript, JavaScript
             </span>
           </li>
           <li>
@@ -59,37 +60,84 @@ const Sidebar: React.FC = () => (
         />
         <Card.Title>Course Highlight</Card.Title>
         <ul className="course-highlight">
-          <li>Data Structures and Algorithms</li>
-          <li>Machine Learning</li>
-          <li>Algorithms</li>
-          <li>Artificial Intelligence</li>
-          <li>Software Engineering</li>
-          <li>Compilers</li>
-          <li>Theory of Computation</li>
-          <li>Intro to Computer Science</li>
-          <li>Intro to Computer Systems</li>
-          <li>Linear Algebra</li>
-          <li>Discrete Mathematics</li>
-          <li>Intro to Economics</li>
-          <li>Single-variable Calculus I</li>
-          <li>Single-variable Calculus II</li>
-          <li>Statistical Methods I</li>
-          <li>Psychology of Language</li>
-          <li>Cognitive Psychology</li>
-          <li>Social Psychology</li>
-          <li>Intro to Cognitive Science</li>
-          <li>Marx and Marxism</li>
-          <li>Intro to Psychology</li>
-          <li>Intro to Linguistics</li>
-          <li>Intro to Philosophy</li>
-          <li>Logic</li>
-          <li>Basics of Reading and Writing Music Notation</li>
-          <li>Intro to Music Technology</li>
-          <li>Acting I</li>
-          <li>Intro to International Relations</li>
-          <li>Namaste America</li>
-          <li>Poststructuralism</li>
+          <li>
+            <strong>Computer Science:</strong>
+            <ul>
+              <li>CPSC 021: Intro to Computer Science</li>
+              <li>CPSC 031: Intro to Computer Systems</li>
+              <li>CPSC 035: Data Structures and Algorithms</li>
+              <li>CPSC 041: Algorithms</li>
+              <li>CPSC 046: Theory of Computation</li>
+              <li>CPSC 063: Artificial Intelligence</li>
+              <li>CPSC 066: Machine Learning</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Math & Statistics:</strong>
+            <ul>
+              <li>MATH 015: Single-variable Calculus I</li>
+              <li>MATH 025: Single-variable Calculus II</li>
+              <li>MATH 027: Linear Algebra</li>
+              <li>MATH 039: Discrete Mathematics</li>
+              <li>STAT 011: Statistical Methods I</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Cognitive Science & Psychology:</strong>
+            <ul>
+              <li>COGS 001: Intro to Cognitive Science</li>
+              <li>PSYC 001: Intro to Psychology</li>
+              <li>PSYC 034: Psychology of Language</li>
+              <li>PSYC 033: Cognitive Psychology</li>
+              <li>PSYC 035: Social Psychology</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Philosophy:</strong>
+            <ul>
+              <li>PHIL 001A: Intro to Philosophy</li>
+              <li>PHIL 012B: Logic</li>
+              <li>PHIL 034: Marx and Marxism</li>
+              <li>PHIL 079: Poststructuralism</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Music:</strong>
+            <ul>
+              <li>MUSC 002B: Reading & Making Music: Basics of Notation</li>
+              <li>MUSC 003A: Intro to Music Technology</li>
+            </ul>
+          </li>
+          <li>
+            <strong>
+              Linguistics, Economics, Political Science, Theatre, English &
+              Religion:
+            </strong>
+            <ul>
+              <li>LING 001: Intro to Linguistics</li>
+              <li>ECON 001: Intro to Economics</li>
+              <li>POLS 004: Intro to International Relations</li>
+              <li>ENGL 001F: FYS: Transition to College Writing (W)</li>
+              <li>THEA 002A: Acting I</li>
+              <li>RELG 073: Namaste America</li>
+            </ul>
+          </li>
         </ul>
+        <CardTitle>Future Courses (Spring 2025)</CardTitle>
+        <ul className="future-courses">
+          <li>CPSC 071: Software Engineering</li>
+          <li>CPSC 075: Compilers</li>
+          <li>CPSC 072: Computer Vision</li>
+          <li>CPSC 099: Senior Comprehensive</li>
+          <li>PHIL 118: Philosophy of Mind</li>
+        </ul>
+        <Card.Img
+          variant="top"
+          src={lastImage}
+          alt="Profile"
+          className="sidebar-profile-image"
+          loading="eager"
+        />
         <Card.Link href="https://linkedin.com/in/bmmasi1">LinkedIn</Card.Link>
         <Card.Link href="https://github.com/branley1">GitHub</Card.Link>
       </Card.Body>

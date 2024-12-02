@@ -5,14 +5,15 @@ import { Navbar, Nav, Form } from "react-bootstrap";
 import "./_navbar.scss";
 
 const CustomNavbar: React.FC = () => {
-  const [theme, setTheme] = useState<string>("light");
-  useEffect(() => {
+  // Prefer dark mode but respect user's stored theme preference
+  const [theme, setTheme] = useState<string>(() => {
     const storedTheme = localStorage.getItem("theme");
-    if (storedTheme) {
-      setTheme(storedTheme);
-      document.documentElement.setAttribute("data-theme", storedTheme);
-    }
-  }, []);
+    return storedTheme ? storedTheme : "dark";
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
 
   // Handle theme toggle
   const handleThemeToggle = () => {
@@ -32,8 +33,8 @@ const CustomNavbar: React.FC = () => {
         <Nav className="me-auto navbar-links">
           <Nav.Link href="#about">Who Am I? </Nav.Link>
           <Nav.Link href="#experience">Experience</Nav.Link>
-          <Nav.Link href="#projects">Projects</Nav.Link>
-          <Nav.Link href="#projects">Hobbies</Nav.Link>
+          <Nav.Link href="#custom-projects">Projects</Nav.Link>
+          {/*<Nav.Link href="#hobbies">Hobbies</Nav.Link>*/}
         </Nav>
         <Form.Check
           type="switch"

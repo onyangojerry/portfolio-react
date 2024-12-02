@@ -12,11 +12,14 @@ const App: React.FC = () => (
   <div className="app-container">
     <CustomNavbar />
     <Hero />
-    <Layout>
-      <AboutMe />
-      <ExperienceTimeline />
-      <ProjectsShowcase />
-    </Layout>
+    <div className="content-container">
+      {/* Wraps content below Hero */}
+      <Layout>
+        <AboutMe />
+        <ExperienceTimeline />
+      </Layout>
+    </div>
+    <ProjectsShowcase />
     <Footer />
   </div>
 );

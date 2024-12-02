@@ -1,18 +1,19 @@
 
 .sidebar {
-  font-family: 'IBM Plex Mono',;
-  position: sticky;
-  top: 80px;
-  overflow-y: auto;
+  font-family: 'IBM Plex Mono', monospace;
+  position: sticky; /* Fix sidebar to the viewport */
+  top: 0; /* Sticks to the top of it's container */
+  flex: 0 0 250px; /* flex-grow: 0, flex-shrink: 0, flex-basis: 250px */
   background-color: var(--bg-color);
   color: var(--text-color);
   padding: 1rem;
   box-sizing: border-box;
   width: 250px;
-  flex-shrink: 0;
   border-radius: 8px;
   font-size: var(--font-size-body);
-  border: 0.1px dotted var(--heading-color);
+  border: 0.1px inset var(--heading-color); /* Other options: inset, outset, groove, double, dashed, dotted */
+  margin: 0;
+  overflow-y: auto;
 
   &:hover {
     transform: translateY(-2.5px);
@@ -55,9 +56,11 @@
   .sidebar-card img {
     width: 100%;
     height: auto;
-    max-width: 200px;
+    max-width: 250px;
     display: block;
     margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 
   .sidebar-card {
@@ -93,9 +96,41 @@
 
   .course-highlight {
     font-size: 0.9rem;
-    padding: 0.9rem;
+    padding: 0rem;
     background-color: var(--card-color);
+    margin-bottom: 0rem;
+    margin-top: 0.5rem;
+    list-style: none;
   }
+
+  .course-highlight > li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+    strong {
+      color: var(--heading-color);
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  .course-highlight > li > ul {
+    list-style-type: square;
+    list-style-position: outside;
+    margin-left: 0;
+    padding-left: 1.5em;
+    font-size: 0.8rem;
+  }
+}
+
+.future-courses {
+  font-size: 0.9rem;
+  padding-left: 1.5em;
+  background-color: var(--card-color);
+  margin-bottom: 0rem;
+  margin-top: 0.5rem;
+  list-style-type: square;
+  list-style-position: outside;
 }
 
 .sidebar-profile-image {
