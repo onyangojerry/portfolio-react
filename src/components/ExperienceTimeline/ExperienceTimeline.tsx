@@ -5,22 +5,34 @@ interface ExperienceProps {
   role: string;
   company: string;
   duration: string;
-  description: string;
+  location: string;
+  description: string | string[];
 }
 
 const ExperienceItem: React.FC<ExperienceProps> = ({
   role,
   company,
   duration,
+  location,
   description,
 }) => (
   <div className="experience-item">
     <h4>{role}</h4>
-    <h5>{company}</h5>
+    <h5>
+      {company} | {location}
+    </h5>
     <p>
       <em>{duration}</em>
     </p>
-    <p>{description}</p>
+    {Array.isArray(description) ? (
+      <ul>
+        {description.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    ) : (
+      <p>{description}</p>
+    )}
   </div>
 );
 
@@ -28,95 +40,51 @@ const ExperienceTimeline: React.FC = () => (
   <section id="experience" className="my-4 experience-timeline">
     <h2>Experience</h2>
     <ExperienceItem
-      role="Frontend Developer"
-      company="TechCorp"
-      duration="Jan 2020 - Dec 2022"
-      description="Developed modern UI components using React and integrated them with backend APIs.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
-      dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
-      laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
-      Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
-      hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
-      convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imp Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
-      dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
-      laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
-      Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
-      hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
-      convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
-      mi.erdiet
-      mi."
+      role="
+      Software Engineering Intern"
+      company="Google"
+      duration="May 2024 - Aug 2024"
+      location="Sunnyvale, CA"
+      description={[
+        "Integrated text and image embeddings to enhance multi-modal spam detection in Gmail.",
+
+        "Optimized data pipelines with efficient ETL processes and caching strategies for improved performance.",
+
+        "Developed unit tests, monitoring tools, and fault-tolerant mechanisms to ensure seamless rollout and 99.9% uptime.",
+
+        "Gained expertise in cloud computing, data pipelining, distributed systems, and C++, Go, SQL, HTML/CSS.",
+      ]}
     />
     <ExperienceItem
-      role="Software Engineer"
-      company="InnovateSoft"
-      duration="Jan 2018 - Dec 2019"
-      description="Worked on full-stack solutions, optimizing application performance and scalability. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
-      dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
-      laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
-      Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
-      hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
-      convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
-      mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
-      dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
-      laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
-      Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
-      hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
-      convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
-      mi."
+      role="IT Student Associate"
+      company="Swarthmore College"
+      duration="Sep 2023 - May 2024"
+      location="Swarthmore, PA"
+      description={[
+        "Resolved 45+ technical support tickets weekly, managed hardware deployments, performed data migrations, and created instructional materials for technical initiatives; improved system efficiency by 25% enhancing user satisfaction.",
+      ]}
     />
     <ExperienceItem
       role="Software Engineering Intern"
-      company="InnovateSoft"
-      duration="Jan 2018 - Dec 2019"
-      description="Worked on full-stack solutions, optimizing application performance and scalability. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
-      dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
-      laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
-      Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
-      hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
-      convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
-      mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
-      dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
-      laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
-      Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
-      hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
-      convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
-      mi."
+      company="Amiva"
+      duration="May 2022 - Aug 2022"
+      location="Nairobi, Kenya"
+      description={[
+        "Collaborated with Amiva's Engineering team to build the organization's payments infrastructure to develop and integrate backend logic with Python & Django, utilizing MySQL and RabbitMQ to enhance stability and performance.",
+      ]}
     />
     <ExperienceItem
-      role="Software Developer"
-      company="InnovateSoft"
-      duration="Jan 2018 - Dec 2019"
-      description="Worked on full-stack solutions, optimizing application performance and scalability. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
-      dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
-      laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
-      Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
-      hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
-      convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
-      mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
-      dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
-      laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
-      Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
-      hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
-      convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
-      mi."
-    />
-    <ExperienceItem
-      role="ITS Technician"
-      company="Bamboozle"
-      duration="Jan 2018 - Dec 2019"
-      description="Worked on full-stack solutions, optimizing application performance and scalability. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
-      dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
-      laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
-      Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
-      hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
-      convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
-      mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem
-      dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum
-      laoreet convallis non sed purus. Ut porta accumsan est quis placerat.
-      Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac
-      hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna
-      convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet
-      mi."
+      role="iOS App Developer"
+      company="Codepath.org"
+      duration="Feb 2022 - May 2022"
+      location="Swarthmore, PA"
+      description={[
+        "Learnt the fundamentals of Swift programming language and made iOS applications on Xcode.",
+
+        "Developed a fully functioning iOS Flashcard app as part of the Codepath Intro to Mobile Design—iOS course.",
+
+        "Graduated with Advanced Honors",
+      ]}
     />
   </section>
 );

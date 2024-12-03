@@ -5,6 +5,7 @@ import CustomNavbar from "./components/Navbar/Navbar";
 import Hero from "./components/HeroSection/HeroSection";
 import AboutMe from "./components/AboutMe/AboutMe";
 import ExperienceTimeline from "./components/ExperienceTimeline/ExperienceTimeline";
+import ExtraExperience from "./components/ExtraExperience/ExtraExperience";
 import ProjectsShowcase from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 import "./styles/main.scss";
@@ -21,6 +22,7 @@ const App: React.FC = () => (
       <Layout>
         <AboutMe />
         <ExperienceTimeline />
+        <ExtraExperience />
       </Layout>
     </div>
     <ProjectsShowcase />

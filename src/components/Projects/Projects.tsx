@@ -1,58 +1,104 @@
 import React from "react";
 import { Row, Col, Button } from "react-bootstrap";
 
-interface ProjectProps {
-  title: string;
+interface ProjectCardProps {
+  name: string;
+  technologies: string;
+  date: string;
   description: string;
-  link: string;
+  links: {
+    live?: string; // Optional live site link
+    github?: string; // Optional GitHub link
+  };
+  isFeatured?: boolean; // Optional boolean to indicate if the project is featured
 }
 
-const ProjectCard: React.FC<ProjectProps> = ({ title, description, link }) => (
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  name,
+  technologies,
+  date,
+  description,
+  links,
+  isFeatured,
+}) => (
   <div className="project-card">
-    <h3>{title}</h3>
+    {/* Render custom live button for site */}
+    <h3>{name}</h3>
+    <p>
+      <strong>Technologies:</strong> {technologies}
+    </p>
+    <p>
+      <strong>Date:</strong> {date}
+    </p>
     <p>{description}</p>
-    <Button variant="primary" href={link} target="_blank">
-      View Project
-    </Button>
+    <div className={`links ${isFeatured ? "featured-links" : ""}`}>
+      {isFeatured && links.live && (
+        <Button
+          className="live-button"
+          href={links.live}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit Live Site
+        </Button>
+      )}
+      {/* Use default Button for GitHub link or regular projects */}
+      {links.github && (
+        <Button
+          className="github-button"
+          href={links.github}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View on GitHub
+        </Button>
+      )}
+    </div>
   </div>
 );
 
 const projects = [
   {
-    title: "Bmmasi Portal",
+    name: "Bmmasi Portal",
+    technologies: "React (TypeScript, HTML, SCSS, JavaScript)",
+    date: "Nov. 2024 - Present",
     description:
-      "A personal portfolio built with React and TypeScript. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com/branley1/portfolio-react",
+      "A responsive portfolio website showcasing my projects and skills, built with React and TypeScript.",
+    links: {
+      live: "https://bmmasi.com",
+      github: "https://github.com/branley1/portfolio-react",
+    },
   },
   {
-    title: "Sentimental Analysis with GRUs",
+    name: "Sentimental Analysis with GRUs",
+    technologies: "Python, TensorFlow, Keras",
+    date: "Mar. 2024 - May 2024",
     description:
-      "Predicting emotions with Gated Recurrent Units. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com/branley1/Predicting-emotions-with-GRUs.git",
+      "A GRU-based neural network for emotion classification from text, achieving 93% accuracy on a dataset of 70,000 tweets.",
+    links: {
+      github: "https://github.com/branley1/Predicting-emotions-with-GRUs.git",
+    },
   },
   {
-    title: "Multi-label Classification with k-Nearest Neighbor",
+    name: "Multi-label Classification with k-NN",
+    technologies: "Python, Scikit-learn",
+    date: "Oct. 2023 - Dec. 2023",
     description:
-      "Multi-label Classification with k-Nearest Neighbor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com/branley1/Multi-label-Classification-with-k-Nearest-Neighbor.git",
+      "A custom k-NN algorithm for multi-label classification with feature weighting, applied to molecular data analysis.",
+    links: {
+      github:
+        "https://github.com/branley1/Multi-label-Classification-with-k-Nearest-Neighbor.git",
+    },
   },
   {
-    title: "iOS Flashcard App",
+    name: "iOS Flashcard Application",
+    technologies: "Swift, Xcode, SnapKit",
+    date: "Feb. 2022 - Feb. 2024",
     description:
-      "A fully-functional iOS Flashcard app build using Swift and Xcode. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com/branley1/flashcard-update.git",
-  },
-  {
-    title: "CodePath.org",
-    description:
-      "Built iOS apps as part of CodePath.org iOS Mobile Design Course. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com/branley1/codepath-iOS.git",
-  },
-  {
-    title: "Custom Project",
-    description:
-      "A custom project intended to be built with <language 1> and <language 2>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem dolor, feugiat at egestas eu, convallis id urna. Donec ac dui ac ipsum laoreet convallis non sed purus. Ut porta accumsan est quis placerat. Aliquam scelerisque faucibus tincidunt. Duis leo quam, fringilla ac hendrerit a, luctus sit amet libero. Suspendisse a tortor eu magna convallis congue ac quis nisi. Nullam eget mi orci. Donec vel imperdiet mi.",
-    link: "https://github.com/branley1/",
+      "An iOS app for flashcard management with a responsive UI, local data persistence, and extensible architecture.",
+    links: {
+      github: "https://github.com/branley1/flashcard-update.git",
+    },
   },
 ];
 
@@ -62,11 +108,7 @@ const ProjectsShowcase: React.FC = () => (
     <Row className="g-4 justify-content-left project grid">
       {projects.map((project, index) => (
         <Col key={index} xs={12} sm={6} md={6} lg={4} xl={3}>
-          <ProjectCard
-            title={project.title}
-            description={project.description}
-            link={project.link}
-          />
+          <ProjectCard key={index} {...project} isFeatured={index === 0} />
         </Col>
       ))}
     </Row>

@@ -31,16 +31,13 @@ const ProfileDetails: React.FC = () => {
           Developer{" "}
         </h4>
         <p>
-          I'm a rising senior at Swarthmore College and as a Computer Science
-          major with a Cognitive Science minor, my interests span AI/ML, NLP,
-          computational linguistics, and full-stack development.
+          I'm a senior at Swarthmore College majoring in Computer Science with a
+          Cognitive Science minor.
         </p>
         <p>
-          I intend to use natural language processing to identify knowledge
-          implicit in large collections of text and apply this knowledge to
-          build innovative applications. This way, I want to finesse
-          human-computer interactions and create a proper understanding between
-          machines and humans.
+          I specialize in full-stack development, machine learning, and
+          generative AI, with a passion for creating innovative, user-focused
+          solutions.
         </p>
         <div className="hero-buttons mt-3">
           <Button
@@ -55,7 +52,7 @@ const ProfileDetails: React.FC = () => {
           </Button>
           <Button
             variant="outline-secondary"
-            href="mailto:barneybranley@gmail.com?subject=Hello&body=Hi, I visited your website and would like to get in touch!"
+            href="mailto:mmasi.branley@gmail.com?subject=Hello Bmmasi!&body=Hi, I visited your website and would like to get in touch!"
             target="_blank"
             onClick={handleMessageMe}
           >
