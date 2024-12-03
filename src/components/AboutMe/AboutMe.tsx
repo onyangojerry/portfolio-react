@@ -11,14 +11,14 @@ const AboutMe: React.FC = () => (
       innovative, user-focused solutions that make a real impact.
     </p>
     <p>
-      As a software engineer, I have a strong foundation in scalable system
-      design and full-stack development. I've built solutions using tools like
+      As a software engineer with a strong foundation in scalable system design
+      and full-stack development, I've built solutions using tools like
       React.js, Node.js, and TensorFlow, and I'm proficient in several
       programming languages, including Python, C++, Swift, Go, and TypeScript.
     </p>
     <p>
       I'm deeply fascinated by the intersection of technology and creativity. My
-      interests span music, film (animations), 3D development, and
+      interests span music technology, film (animations), 3D development, and
       human-computer interaction, inspiring me to explore how technology can
       enhance artistic expression and user experiences. My work often focuses on
       AI/ML, natural language processing (NLP), computational linguistics, and
@@ -28,9 +28,9 @@ const AboutMe: React.FC = () => (
     <p>
       I'm particularly passionate about using NLP to uncover hidden patterns and
       knowledge within large text datasets and applying these insights to create
-      human-centered applications. My ultimate goal is to enhance human-computer
-      interactions by bridging the gap between machines and humans, fostering
-      more intuitive and meaningful connections.
+      human-centered applications. The ultimate goal being to enhance
+      human-computer interactions by bridging the gap between machines and
+      humans, fostering more intuitive and meaningful connections.
     </p>
   </section>
 );
