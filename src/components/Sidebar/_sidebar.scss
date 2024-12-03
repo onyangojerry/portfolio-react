@@ -11,7 +11,7 @@
   width: 250px;
   border-radius: 8px;
   font-size: var(--font-size-body);
-  border: 0.1px inset var(--heading-color); /* Other options: inset, outset, groove, double, dashed, dotted */
+  border: 0.1px outset var(--heading-color); /* Other options: inset, outset, groove, double, dashed, dotted */
   margin: 0;
   overflow-y: auto;
 
