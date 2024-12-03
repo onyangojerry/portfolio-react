@@ -11,6 +11,13 @@ const AboutMe: React.FC = () => (
       innovative, user-focused solutions.
     </p>
     <p>
+      I'm a software engineer with a strong foundation in full-stack
+      development, and scalable system design. I've specialized in building
+      solutions with tools such as React.js, Node.js, and TensorFlow, and I'm
+      proficient in several languages including Python, C, C++, Swift, GoLang,
+      and TypeScript.
+    </p>
+    <p>
       Fascinated by the intersection of technology and creativity, my interests
       span music, film (animations), 3D development, and human-computer
       interaction. My work emphasizes AI/ML, natural language processing (NLP),

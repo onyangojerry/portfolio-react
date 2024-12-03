@@ -30,15 +30,6 @@ const ProfileDetails: React.FC = () => {
           Computer Science major with a Cognitive Science minor | Full-Stack
           Developer{" "}
         </h4>
-        <p>
-          I'm a senior at Swarthmore College majoring in Computer Science with a
-          Cognitive Science minor.
-        </p>
-        <p>
-          I specialize in full-stack development, machine learning, and
-          generative AI, with a passion for creating innovative, user-focused
-          solutions.
-        </p>
         <div className="hero-buttons mt-3">
           <Button
             variant="primary"
