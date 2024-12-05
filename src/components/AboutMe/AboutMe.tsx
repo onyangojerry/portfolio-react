@@ -6,9 +6,9 @@ const AboutMe: React.FC = () => (
     <h2>About Me</h2>
     <p>
       I'm a senior at Swarthmore College, majoring in Computer Science with a
-      Cognitive Science minor. I specialize in full-stack development, machine
-      learning, and artificial intelligence, with a passion for creating
-      innovative, user-focused solutions that make a real impact.
+      Cognitive Science minor. I specialize in full-stack development, mobile
+      app development, and ML/AI with a passion for creating innovative,
+      user-focused solutions that make a real impact.
     </p>
     <p>
       As a software engineer with a strong foundation in scalable system design
