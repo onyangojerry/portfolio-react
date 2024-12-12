@@ -70,6 +70,17 @@ const projects = [
     },
   },
   {
+    name: "Moodi-fi",
+    technologies:
+      "React (TypeScript, HTML, SCSS, JavaScript), MongoDB, Spotify WebAPI, Gemini 2.0 API, Gemini 1.5 API",
+    date: "Dec. 2024 - Present",
+    description:
+      "Currently working on a tool that let's users login to their Spotify, get detailed summaries of their listening and generate mood playlists based on text (coming soon: multimodal).",
+    links: {
+      github: "https://github.com/branley1/moodi-fi",
+    },
+  },
+  {
     name: "Sentimental Analysis with GRUs",
     technologies: "Python, TensorFlow, Keras",
     date: "Mar. 2024 - May 2024",
@@ -116,16 +127,6 @@ const projects = [
       "Gemini 2.0 API, Google AI Studio, Google Colab, Jupyter Notebook",
     date: "Dec. 2024 - Dec. 2024",
     description: "API setup for aistudio.google.com.",
-    links: {
-      github: "https://github.com/branley1/aistudio.google.com.git",
-    },
-  },
-  {
-    name: "Musify",
-    technologies: "React, Spotify WebAPI, Gemini 2.0 API",
-    date: "Dec. 2024 - Present",
-    description:
-      "I'm currently working on a tool that let's users login to their Spotify and get summaries and details of their listening,you can also generate playlists based on multimodal inputs using Google's Gemini 2.0 API.",
     links: {
       github: "https://github.com/branley1/aistudio.google.com.git",
     },
