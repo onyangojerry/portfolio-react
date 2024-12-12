@@ -11,9 +11,11 @@
   width: 250px;
   border-radius: 8px;
   font-size: var(--font-size-body);
-  border: 0.1px outset var(--heading-color); /* Other options: inset, outset, groove, double, dashed, dotted */
+  border: 0.1px dashed var(--box-shadow-color); /* Other options: inset, outset, groove, double, dashed, dotted */
   margin: 0;
   overflow-y: auto;
+  margin-top: 1rem;
+  margin-left: -0.125rem;
 
   &:hover {
     transform: translateY(-2.5px);

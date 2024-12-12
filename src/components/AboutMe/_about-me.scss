@@ -15,9 +15,26 @@
     margin-top: -1rem;
   }
 
+  h5 {
+    color: var(--heading-color);
+    font-weight: 700;
+  }
+
   p {
     font-size: var(--font-size-body);
     line-height: 1.6;
     margin-bottom: 1rem;
+    padding: 0.125rem;
+  }
+
+  ul {
+    li {
+      list-style: none;
+      padding: 0.5rem;
+    }
+
+    li::before {
+      content: "🖥️   ";
+    }
   }
 }

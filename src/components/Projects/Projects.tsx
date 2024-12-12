@@ -100,6 +100,36 @@ const projects = [
       github: "https://github.com/branley1/flashcard-update.git",
     },
   },
+  {
+    name: "A Smol Course",
+    technologies: "Python, Google Colab, OpenAI, Hugging Face",
+    date: "Dec. 2024 - Present",
+    description:
+      "A practical, community-driven course on aligning small language models for domain-specific applications, providing a hands-on approach to working with small language models from initial training to production deployment.",
+    links: {
+      github: "https://github.com/branley1/smol-course.git",
+    },
+  },
+  {
+    name: "Google AI Studio Set up",
+    technologies:
+      "Gemini 2.0 API, Google AI Studio, Google Colab, Jupyter Notebook",
+    date: "Dec. 2024 - Dec. 2024",
+    description: "API setup for aistudio.google.com.",
+    links: {
+      github: "https://github.com/branley1/aistudio.google.com.git",
+    },
+  },
+  {
+    name: "Musify",
+    technologies: "React, Spotify WebAPI, Gemini 2.0 API",
+    date: "Dec. 2024 - Present",
+    description:
+      "I'm currently working on a tool that let's users login to their Spotify and get summaries and details of their listening,you can also generate playlists based on multimodal inputs using Google's Gemini 2.0 API.",
+    links: {
+      github: "https://github.com/branley1/aistudio.google.com.git",
+    },
+  },
 ];
 
 const ProjectsShowcase: React.FC = () => (

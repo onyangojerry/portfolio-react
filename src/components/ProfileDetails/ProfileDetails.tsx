@@ -21,14 +21,30 @@ const ProfileDetails: React.FC = () => {
     });
   };
 
+  const handleGitHub = () => {
+    ReactGA.event({
+      category: "Contact",
+      action: "Clicked Message Me",
+      label: "Message Me Button",
+    });
+  };
+
+  const handleLinkedIn = () => {
+    ReactGA.event({
+      category: "Contact",
+      action: "Clicked Message Me",
+      label: "Message Me Button",
+    });
+  };
+
   return (
     <div className="hero-content text-left">
       <div className="profile-info">
         <h1>Branley Mmasi</h1>
         <h4>
           {" "}
-          Computer Science major with a Cognitive Science minor | Swarthmore
-          College{" "}
+          I'm a Computer Science major with Cognitive Science minor at
+          Swarthmore College, graduating in May, 2025.{" "}
         </h4>
         <div className="hero-buttons mt-3">
           <Button
@@ -42,12 +58,28 @@ const ProfileDetails: React.FC = () => {
             Download Resume
           </Button>
           <Button
-            variant="outline-secondary"
+            variant="primary"
             href="mailto:mmasi.branley@gmail.com?subject=Hello Bmmasi!&body=Hi, I visited your website and would like to get in touch!"
             target="_blank"
             onClick={handleMessageMe}
           >
-            Message Me
+            Contact
+          </Button>
+          <Button
+            variant="outline-secondary"
+            href="https://github.com/branley1"
+            target="_blank"
+            onClick={handleGitHub}
+          >
+            GitHub
+          </Button>
+          <Button
+            variant="outline-secondary"
+            href="https://linkedin.com/in/bmmasi1"
+            target="_blank"
+            onClick={handleLinkedIn}
+          >
+            LinkedIn
           </Button>
         </div>
       </div>

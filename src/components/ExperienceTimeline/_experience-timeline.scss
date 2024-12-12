@@ -2,7 +2,7 @@
 
 .experience-timeline {
     font-family: 'IBM Plex Mono', monospace; // Moved from inline style
-    padding: 0.5rem; // Adjust padding as needed
+    padding-left: 0.5rem;
     background-color: var(--bg-color);
     color: var(--text-color);
     border-radius: 8px;
@@ -10,35 +10,31 @@
     h2 {
       font-size: var(--font-size-subheading);
       color: var(--heading-color);
-      margin-bottom: 1.5rem;
       font-weight: 700;
     }
   
     .experience-item {
-      margin-bottom: 1rem; // Spacing between experience items
       padding: 1rem;
       background-color: var(--bg-color);
       border-top-right-radius: 20px;
       border-bottom-left-radius: 20px;
       border-top-left-radius: 10px;
       border-bottom-right-radius: 10px;
+      margin-top: -1rem;
   
       h4 {
         font-size: 1.25rem;
         color: var(--heading-color);
-        margin-bottom: 0.5rem;
       }
   
       h5 {
         font-size: 1rem;
         color: var(--text-color);
-        margin-bottom: 0.5rem;
       }
   
       p {
         font-size: var(--font-size-body);
         line-height: 1.6;
-        margin-bottom: 1rem;
   
         em {
           font-style: italic;

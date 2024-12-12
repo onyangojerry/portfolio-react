@@ -10,6 +10,8 @@
     box-sizing: border-box;
     min-height: 100px;
     margin-top: -15px;
+    border-radius: 8px;
+    border-bottom: 0.1px solid var(--border-color);
 
     .hero-banner {
       position: relative;
@@ -54,5 +56,10 @@
             max-width: 100px;
             bottom: 5%; // Adjust for smaller screens
         }
+    }
+
+    &:hover {
+        transform: translateY(-2.5px);
+        box-shadow: 0 2.5px 5px var(--box-shadow-color);
     }
 }
