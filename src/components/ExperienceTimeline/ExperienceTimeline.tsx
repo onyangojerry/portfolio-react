@@ -38,7 +38,7 @@ const ExperienceItem: React.FC<ExperienceProps> = ({
 
 const ExperienceTimeline: React.FC = () => (
   <section id="experience" className="my-4 experience-timeline">
-    <h2>Experience</h2>
+    <h2>Technical Experience</h2>
     <ExperienceItem
       role="
       Software Engineering Intern"
@@ -46,22 +46,13 @@ const ExperienceTimeline: React.FC = () => (
       duration="May 2024 - Aug 2024"
       location="Sunnyvale, CA"
       description={[
-        "Integrated text and image embeddings to enhance multi-modal spam detection in Gmail.",
+        "Modernized a multi-modal spam clustering tool by integrating text and image embeddings, enhancing accuracy and scalability.",
 
-        "Optimized data pipelines with efficient ETL processes and caching strategies for improved performance.",
+        "Optimized ETL pipelines, reducing processing time and ensuring 99.9% uptime with fault-tolerant backend solutions.",
 
-        "Developed unit tests, monitoring tools, and fault-tolerant mechanisms to ensure seamless rollout and 99.9% uptime.",
+        "Conducted code reviews and wrote unit tests in an agile environment to maintain high-quality deliverables.",
 
-        "Gained expertise in cloud computing, data pipelining, distributed systems, and C++, Go, SQL, HTML/CSS.",
-      ]}
-    />
-    <ExperienceItem
-      role="IT Student Associate"
-      company="Swarthmore College"
-      duration="Sep 2023 - May 2024"
-      location="Swarthmore, PA"
-      description={[
-        "Resolved 45+ technical support tickets weekly, managed hardware deployments, performed data migrations, and created instructional materials for technical initiatives; improved system efficiency by 25% enhancing user satisfaction.",
+        "Developed expertise in cloud computing, data pipelines, distributed systems, and tools like C++, Go, SQL, and HTML/CSS.",
       ]}
     />
     <ExperienceItem
@@ -83,7 +74,7 @@ const ExperienceTimeline: React.FC = () => (
 
         "Developed a fully functioning iOS Flashcard app as part of the Codepath Intro to Mobile Design—iOS course.",
 
-        "Graduated with Advanced Honors",
+        "Graduated with Honors",
       ]}
     />
   </section>
