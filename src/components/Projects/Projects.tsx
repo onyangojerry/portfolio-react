@@ -81,6 +81,16 @@ const projects = [
     },
   },
   {
+    name: "My Spotify Listening Insights",
+    technologies: "Python, Jupyter Notebook",
+    date: "Dec. 2024 - Present",
+    description:
+      "Analysis of my Spotify data since I installed the app in 2021! I dive into: when I listen the most, my top artists and why I love them, listening streaks, trends over time (does my music taste evolve or do I stick to my classics?) and literally anything I can get from my data!!",
+    links: {
+      github: "https://github.com/branley1/spotify-parse",
+    },
+  },
+  {
     name: "Sentimental Analysis with GRUs",
     technologies: "Python, TensorFlow, Keras",
     date: "Mar. 2024 - May 2024",
@@ -119,6 +129,16 @@ const projects = [
       "A practical, community-driven course on aligning small language models for domain-specific applications, providing a hands-on approach to working with small language models from initial training to production deployment.",
     links: {
       github: "https://github.com/branley1/smol-course.git",
+    },
+  },
+  {
+    name: "Simple Multi-Band Compressor Plugin",
+    technologies: "C++, JUCE, Xcode, Fork",
+    date: "Nov. 2024 - Present",
+    description:
+      "A simple multi-band compressor plugin built with JUCE, Xcode and C++ based off freeCodeCamp's tutorial.",
+    links: {
+      github: "https://github.com/branley1/",
     },
   },
   {
