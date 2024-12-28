@@ -4,9 +4,6 @@
 @use '../themes/themes' as themes;
 @use '../components/index' as components;
 
-
-@import 'bootstrap/scss/bootstrap';
-
 // Apply global styles
 body, html {
     background-color: var(--bg-color);

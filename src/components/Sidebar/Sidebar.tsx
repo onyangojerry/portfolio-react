@@ -1,13 +1,16 @@
 import React from "react";
 import { Card, CardTitle } from "react-bootstrap";
 import "./_sidebar.scss";
-
 import profileImage from "../../assets/images/sidebar/sidebargif.webp";
 import courseImage from "../../assets/images/sidebar/education.jpg";
 import lastImage from "../../assets/images/sidebar/qr-code.png";
 
-const Sidebar: React.FC = () => (
-  <div className="sidebar">
+interface SidebarProps {
+  className?: string;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => (
+  <div className={`sidebar ${className}`}>
     <Card className="sidebar-card">
       <Card.Img
         variant="top"
@@ -22,21 +25,22 @@ const Sidebar: React.FC = () => (
           <li>
             <strong>Machine Learning: </strong>
             <span>
-              Scikit-learn, Keras, TensorFlow, OpenAI API, Hugging Face, XGBoost
+              Scikit-learn, Keras, TensorFlow, Gemini 2.0 API, OpenAI API,
+              Hugging Face, XGBoost
             </span>
           </li>
           <li>
             <strong>Languages: </strong>
             <span>
-              C++, C, Python, Swift, HTML5, CSS, JavaScript, React Native, R,
-              GoLang, TypeScript, JavaScript
+              C++, C, Python, Swift, HTML5/CSS, SASS, JavaScript, React Native,
+              R, GoLang, TypeScript, Perl, Rust
             </span>
           </li>
           <li>
             <strong>Frameworks: </strong>
             <span>
-              gRPC, React JS, TensorFlow, PyTorch, Django, SwiftUI, Keras,
-              Node.js, Codespaces, Vue.js, Vite.js
+              React JS, Tensorflow, Pytorch, Keras, Django, SwiftUI, Next.js,
+              Vue.js, Vite, Node.js, JUCE
             </span>
           </li>
           <li>
@@ -46,8 +50,9 @@ const Sidebar: React.FC = () => (
           <li>
             <strong>Tools: </strong>
             <span>
-              REST APIs, Git/GitHub, RabbitMQ, Xcode, Apache Flume, Jupyter
-              Notebooks, Google Cloud Platform, AWS
+              gRPC, REST APIs, Git/GitHub, RabbitMQ, Xcode, Apache Flume,
+              Jupyter Notebook, Google Cloud Platform, AWS, WebAPIs, Google
+              Colab
             </span>
           </li>
         </ul>

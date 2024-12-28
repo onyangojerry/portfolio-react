@@ -25,11 +25,13 @@
 
   @media (max-width: 767px) {
     width: 100%;
-    position: relative;
+    position: absolute;
     top: 0;
     border: none;
     border-radius: 0;
+    height: 100vh;
     margin-bottom: 1rem;
+    display: none;
   }
 
   .card-title, .card-subtitle, .card-text, .card-link {
@@ -122,6 +124,25 @@
     margin-left: 0;
     padding-left: 1.5em;
     font-size: 0.8rem;
+  }
+
+  /* Mobile version of the sidebar */
+  @media (max-width: 767px) {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100vh; // Full height on mobile
+    display: none; // Hide by default
+    border: none;
+    border-radius: 0;
+    margin-bottom: 1rem;
+
+    &.active {
+      display: block; // Show when active (dropdown)
+      background-color: var(--bg-color);
+    }
   }
 }
 

@@ -11,14 +11,16 @@ import Footer from "./components/Footer/Footer";
 import "./styles/main.scss";
 
 // Initialize Google analytics
-ReactGA.initialize("G-Y2Y4Z8YTCS");
+const googleAnalyticsKey = import.meta.env.VITE_GOOGLE_ANALYTICS_KEY;
+if (googleAnalyticsKey) {
+  ReactGA.initialize(googleAnalyticsKey);
+}
 
 const App: React.FC = () => (
   <div className="app-container">
     <CustomNavbar />
     <Hero />
     <div className="content-container">
-      {/* Wraps content below Hero */}
       <Layout>
         <AboutMe />
         <ExperienceTimeline />

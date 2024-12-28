@@ -1,4 +1,6 @@
-@use './abstracts/variables';
-@use './themes/_themes.scss' as *;
-@use './components/index' as *;
-@use './base/global' as *; 
+@use '@styles/abstracts/index' as *;
+@use '@styles/abstracts/variables' as abstracts;
+@use '@styles/components/components' as components;
+@use '@styles/themes/themes' as *;
+@use '@styles/components/index' as *;
+@use '@styles/base/global' as *;
