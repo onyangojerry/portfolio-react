@@ -15,11 +15,9 @@
     }
 
     h4 {
-      font-size: var(--font-size-body);
+      font-size: var(--font-size-hero-section);
       color: var(--text-color);
       opacity: 0.8;
-      padding: 0.5rem;
-      padding-left: 0rem;
     }
 
     p {
@@ -32,7 +30,6 @@
       flex-wrap: wrap;
       align-items: center;
       gap: 0.5rem;
-      margin-top: 0.5rem;
       margin-bottom: 0.5rem;
 
       .btn-primary {
