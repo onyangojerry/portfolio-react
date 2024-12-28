@@ -43,7 +43,7 @@ const ProfileDetails: React.FC = () => {
         <h1>Branley Mmasi</h1>
         <h4>
           {" "}
-          I'm a Computer Science major with Cognitive Science minor at
+          I'm a Computer Science major with a Cognitive Science minor at
           Swarthmore College, graduating in May, 2025.{" "}
         </h4>
         <div className="hero-buttons mt-3">
