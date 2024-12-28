@@ -15,7 +15,7 @@
     }
 
     h4 {
-      font-size: var(--font-size-subsubheading);
+      font-size: var(--font-size-body);
       color: var(--text-color);
       opacity: 0.8;
       padding: 0.5rem;
@@ -30,6 +30,7 @@
     .hero-buttons {
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       gap: 0.5rem;
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
@@ -40,8 +41,6 @@
         border-color: var(--button-bg);
         font-size: 1rem;
         padding: 0.4rem 0.8rem;
-        margin-right: 0.5rem;
-        margin-left: 0rem;
 
         &:hover {
           transform: translateY(-2.5px);
@@ -59,7 +58,6 @@
       .btn-outline-secondary {
         color: var(--text-color);
         border-color: var(--border-color);
-        margin-right: 0.5rem;
         font-size: 1rem;
         padding: 0.4rem 0.8rem;
 
