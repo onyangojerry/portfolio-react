@@ -1,4 +1,5 @@
 # **Bmmasi Portal**
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a1192e94-a7ab-46b3-91bf-29ba6d7ad682/deploy-status)](https://app.netlify.com/sites/bmmasi/deploys)
 
 Hi! 
 
