@@ -18,9 +18,8 @@
   margin-left: -0.125rem;
 
   &:hover {
-    transform: translateY(-2.5px);
+    // transform: translateY(-2.5px);
     box-shadow: 0 1px 2px var(--box-shadow-color);
-    background-color: var(--card-color);
   }
 
   @media (max-width: 767px) {
@@ -94,6 +93,21 @@
 
       &:hover {
         color: var(--heading-color);
+      }
+    }
+
+    // Current listen
+    h5 {
+      color: var(--heading-color);
+      font-size: var(--font-size-subsubheading);
+      font-weight: 700;
+      text-align: center;
+      margin: 0.5rem;
+      border-radius: 8px;
+
+      &:hover {
+        transform: translateY(-0.5px);
+        box-shadow: 0 1px 2px var(--box-shadow-color);
       }
     }
   }

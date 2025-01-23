@@ -32,7 +32,8 @@ const CustomNavbar: React.FC = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto navbar-links">
           <Nav.Link href="#about">Who Am I? </Nav.Link>
-          <Nav.Link href="#experience">Experience</Nav.Link>
+          <Nav.Link href="#experience">Technical Experience</Nav.Link>
+          <Nav.Link href="#extra-experience">Extracurricular Experience</Nav.Link>
           <Nav.Link href="#custom-projects">Projects</Nav.Link>
           {/*<Nav.Link href="#hobbies">Hobbies</Nav.Link>*/}
         </Nav>
