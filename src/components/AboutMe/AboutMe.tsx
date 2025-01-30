@@ -4,7 +4,7 @@ import "./_about-me.scss";
 const AboutMe: React.FC = () => (
   <section id="about" className="my-4 about-me">
     <h2>Hi there!</h2>
-    <p>🔭 I'm diving into deep learning and machine learning by fine-tuning local LLMs, working on real-world applications, and picking up key concepts along the way.</p>
+    <p>🔭 I'm diving into deep learning and machine learning by building an AI chatbot using fine-tuned local LLMs, working on real-world applications and picking up key concepts along the way.</p>
     <p>🌱 In my Compilers class, I'm learning OCaml and getting hands-on with functional programming. I'm also exploring JUCE to develop audio plugins—exciting stuff!</p>
     <p>👯 I love collaborating on open source projects, especially those that involve creating interactive websites, iOS apps, or anything that puts users first. Check out my projects on GitHub!</p>
     <h5>My interests mainly lie in: </h5>
