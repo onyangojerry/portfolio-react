@@ -70,6 +70,17 @@ const projects = [
     },
   },
   {
+    name: "JuaCode AI Coding Assistant",
+    technologies:
+      "React (HTML/CSS, JavaScript), Node.js/Express",
+    date: "Jan. 2025 - Present",
+    description:
+      "A full-stack, ChatGPT-like personal AI assitant coding application built with a responsive React frontend and an Express backend. Integrates the deepseek-r1 language model to generate intelligent responses, featuring autosave, dynamic chat renaming, shareable chat links, and a clean, modern UI with a collapsible sidebar.",
+    links: {
+      github: "https://github.com/branley1/juacode-ai",
+    },
+  },
+  {
     name: "Moodi-fi",
     technologies:
       "React (TypeScript, HTML, SCSS, JavaScript), MongoDB, Spotify WebAPI, Gemini 2.0 API, Gemini 1.5 API",
