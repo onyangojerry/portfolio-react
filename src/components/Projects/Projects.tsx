@@ -92,13 +92,13 @@ const projects = [
     },
   },
   {
-    name: "My Spotify Listening Insights",
+    name: "Deepseek-r1 with RAG",
     technologies: "Python, Jupyter Notebook",
     date: "Dec. 2024 - Present",
     description:
-      "Analysis of my Spotify data since I installed the app in 2021! I dive into: when I listen the most, my top artists and why I love them, listening streaks, trends over time (does my music taste evolve or do I stick to my classics?) and literally anything I can get from my data!!",
+      "Engineered a chatbot application leveraging the open-source Deepseek-r1 reasoning model to deliver context-rich, privacy-preserving local AI interactions using Knowledge Augmented Generation (KAG) framework.",
     links: {
-      github: "https://github.com/branley1/spotify-parse",
+      github: "https://github.com/branley1/deepseek-r1",
     },
   },
   {
