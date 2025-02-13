@@ -17,11 +17,11 @@ Static website made with HTML, CSS, JS and Bootstrap
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/branley1/personal-portfolio.git
+   git clone https://github.com/branley1/portfolio-react.git
    ```
 2. **Navigate to the project directory:**
    ```bash
-   cd personal-portfolio
+   cd portfolio-react/public/classic/
    ```
 
 ## Usage
