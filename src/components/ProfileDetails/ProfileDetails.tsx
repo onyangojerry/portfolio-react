@@ -24,16 +24,24 @@ const ProfileDetails: React.FC = () => {
   const handleGitHub = () => {
     ReactGA.event({
       category: "Contact",
-      action: "Clicked Message Me",
-      label: "Message Me Button",
+      action: "Clicked GitHub",
+      label: "GitHub Button",
     });
   };
 
   const handleLinkedIn = () => {
     ReactGA.event({
       category: "Contact",
-      action: "Clicked Message Me",
-      label: "Message Me Button",
+      action: "Clicked LinkedIn",
+      label: "LinkedIn Button",
+    });
+  };
+
+  const handleClassicSite = () => {
+    ReactGA.event({
+      category: "Navigation",
+      action: "Visited Classic Site",
+      label: "Classic Site Button",
     });
   };
 
@@ -49,7 +57,7 @@ const ProfileDetails: React.FC = () => {
         <div className="hero-buttons mt-3">
           <Button
             variant="primary"
-            href="https://drive.google.com/drive/folders/1tgKnePQpHcQNuCEtSm_M-xlfmLuAf139?usp=sharing"
+            href="https://drive.google.com/file/d/1SrwJCrNLfMOLNtAwNVq5qT65MCIO15bS/view?usp=sharing"
             target="_blank" /* Opens in new tab */
             rel="noopener noreferrer"
             onClick={handleDownloadResume}
@@ -80,6 +88,13 @@ const ProfileDetails: React.FC = () => {
             onClick={handleLinkedIn}
           >
             LinkedIn
+          </Button>
+          <Button
+            variant="outline-secondary"
+            href="/classic/index.html"
+            onClick={handleClassicSite}
+          >
+            🎨 Retro Version
           </Button>
         </div>
       </div>

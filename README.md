@@ -1,9 +1,68 @@
 # **Bmmasi Portal**
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1192e94-a7ab-46b3-91bf-29ba6d7ad682/deploy-status)](https://app.netlify.com/sites/bmmasi/deploys)
 
-Hi! 
+This project serves as my digital space to showcase who I am, what I do, and the 
+projects I've either worked on or been a part of. This repository contains two portfolio websites:
 
-This project serves as my digital space to showcase who I am, what I do, and the projects I've either worked on or been a part of. It's built with modern web technologies and a focus on clean design, responsiveness, and accessibility.
+1. Modern React Portfolio (Main Site)
+   - Main portfolio site
+   - Built with React + TypeScript
+   - Deployed at: https://bmmasi.com
+
+2. Classic Portfolio (Classic Site)
+   - Alternative portfolio design
+   - Built with HTML/CSS/JS
+   - Accessible at: https://bmmasi.com/classic
+
+## Setup Instructions
+
+1. The React portfolio is deployed as the main site
+2. The classic portfolio is deployed to the /classic subdirectory
+3. Netlify configuration handles proper routing between sites
+
+## Dependencies
+
+### React Portfolio
+- React 18.x with TypeScript
+- React Router DOM 6.x
+- React Bootstrap
+- SCSS for styling
+- See package.json for complete list
+
+### Classic Portfolio
+- jQuery 3.x
+- Bootstrap 4.3.1
+- Particle.js
+- Various jQuery plugins (see classic/js/ directory)
+
+## Project Structure
+```plaintext
+src/
+├── components/           # React components
+│   ├── Navbar/          # Navigation bar
+│   ├── HeroSection/     # Hero section
+│   ├── Layouts/         # Layout components
+│   ├── Sidebar/         # Sticky sidebar
+│   ├── AboutMe/         # About section
+│   ├── ExperienceTimeline/
+│   ├── Projects/        # Project showcase
+│   └── Footer/          # Footer component
+├── styles/              # Global styles
+public/
+└── classic/            # Classic portfolio files
+    ├── css/
+    ├── js/
+    ├── images/
+    ├── fonts/
+    └── index.html
+```
+
+## Deployment
+
+The site is deployed on Netlify with the following configuration:
+- Main site (/) serves the React portfolio
+- Classic site (/classic) serves the HTML/CSS portfolio
+- Routing is handled via netlify.toml configuration
 
 ---
 
@@ -95,12 +154,7 @@ Want to see the code in action? Here's how to get the project up and running:
 ---
 
 ## **Deployment**
-This portfolio is hosted on **Netlify** using a custom domain. Here’s how updates are deployed:
-
-1. Push code changes to the GitHub repository.
-2. Netlify automatically builds and deploys the latest version.
-
-Here's the latest live version: [Bmmasi Portal](https://bmmasi.netlify.app).
+This portfolio is hosted on **Netlify** using a custom domain. Here's the latest live version: [Bmmasi Portal](https://bmmasi.com).
 
 ---
 

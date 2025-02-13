@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactGA from "react-ga4";
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layouts/Layout";
 import CustomNavbar from "./components/Navbar/Navbar";
 import Hero from "./components/HeroSection/HeroSection";
@@ -16,7 +17,8 @@ if (googleAnalyticsKey) {
   ReactGA.initialize(googleAnalyticsKey);
 }
 
-const App: React.FC = () => (
+// Main portfolio component
+const MainPortfolio: React.FC = () => (
   <div className="app-container">
     <CustomNavbar />
     <Hero />
@@ -30,6 +32,12 @@ const App: React.FC = () => (
     <ProjectsShowcase />
     <Footer />
   </div>
+);
+
+const App: React.FC = () => (
+  <Routes>
+    <Route path="/" element={<MainPortfolio />} />
+  </Routes>
 );
 
 export default App;

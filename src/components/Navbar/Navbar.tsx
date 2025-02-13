@@ -35,6 +35,7 @@ const CustomNavbar: React.FC = () => {
           <Nav.Link href="#experience">Technical Experience</Nav.Link>
           <Nav.Link href="#extra-experience">Extracurricular Experience</Nav.Link>
           <Nav.Link href="#custom-projects">Projects</Nav.Link>
+          <Nav.Link href="/classic/index.html">🎨 Curious?</Nav.Link>
           {/*<Nav.Link href="#hobbies">Hobbies</Nav.Link>*/}
         </Nav>
         <Form.Check
