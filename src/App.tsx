@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ReactGA from "react-ga4";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layouts/Layout";
