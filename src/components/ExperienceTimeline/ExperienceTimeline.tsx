@@ -61,7 +61,13 @@ const ExperienceTimeline: React.FC = () => (
       duration="August 2024 - Present"
       location="Swarthmore, PA"
       description={[
-        "Implemented Automation ",
+        "Spearheaded automation of deployment and server updates by integrating Salt Project in the school’s IT infrastructure cutting server downtime by 80 percent.",
+        
+        "Improvised pipeline commands by writing scripts across all Unix systems creating seamless automation and simulation in the server systems cutting down time used to manage severs by 20%.",
+
+        "Analyzed server performance metrics and resource utilization to identify inefficiencies, leading to a 10% reduction in server access failures, enhancing overall system reliability and user satisfaction.",
+
+        "Performed root cause analysis by sending constant email updates to students on phishing, improving system stability by 15%.",
       ]}
     />
     <ExperienceItem
@@ -71,19 +77,8 @@ const ExperienceTimeline: React.FC = () => (
       location="Nairobi, Kenya"
       description={[
         "Executed software upgrades and patch implementations, addressing an average of 35 IT-related tickets per week, improving system efficiency by 20%, and boosting user satisfaction in a high-demand environment.",
-      ]}
-    />
-    <ExperienceItem
-      role="iOS App Developer"
-      company="Codepath.org"
-      duration="Feb 2022 - May 2022"
-      location="Swarthmore, PA"
-      description={[
-        "Learnt the fundamentals of Swift programming language and made iOS applications on Xcode.",
 
-        "Developed a fully functioning iOS Flashcard app as part of the Codepath Intro to Mobile Design—iOS course.",
-
-        "Graduated with Honors.",
+        "Spearheaded need to incorporate automation and bot assistants in ticket management for IT solutions on FreshService."
       ]}
     />
   </section>
