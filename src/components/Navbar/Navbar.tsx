@@ -26,7 +26,7 @@ const CustomNavbar: React.FC = () => {
   return (
     <Navbar expand="lg" className="mb-4 custom-navbar">
       <Navbar.Brand href="/" className="navbar-brand">
-        Bmmasi
+        OnyangoJerry
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
