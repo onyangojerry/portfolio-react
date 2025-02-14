@@ -67,7 +67,7 @@ const ProfileDetails: React.FC = () => {
           </Button>
           <Button
             variant="primary"
-            href="mailto:mmasi.branley@gmail.com?subject=Hello Bmmasi!&body=Hi, I visited your website and would like to get in touch!"
+            href="mailto:jerry.onyango.rawlings@gmail.com?subject=Hello Onyangojerry!&body=Hi, I visited your website and would like to get in touch!"
             target="_blank"
             onClick={handleMessageMe}
           >
@@ -75,7 +75,7 @@ const ProfileDetails: React.FC = () => {
           </Button>
           <Button
             variant="outline-secondary"
-            href="https://github.com/branley1"
+            href="https://github.com/onyangojerry"
             target="_blank"
             onClick={handleGitHub}
           >
@@ -83,7 +83,7 @@ const ProfileDetails: React.FC = () => {
           </Button>
           <Button
             variant="outline-secondary"
-            href="https://linkedin.com/in/bmmasi1"
+            href="https://linkedin.com/in/jerry-rawlings-onyango"
             target="_blank"
             onClick={handleLinkedIn}
           >
