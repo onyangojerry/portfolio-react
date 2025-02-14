@@ -48,11 +48,11 @@ const ProfileDetails: React.FC = () => {
   return (
     <div className="hero-content text-left">
       <div className="profile-info">
-        <h1>Branley Mmasi</h1>
+        <h1>Jerry Onyango</h1>
         <h4>
           {" "}
-          I'm a Computer Science major with a Cognitive Science minor at
-          Swarthmore College, graduating in May, 2025.{" "}
+          I'm a Computer Science major minor at
+          Pomona College, graduating in May, 2026.{" "}
         </h4>
         <div className="hero-buttons mt-3">
           <Button
