@@ -59,56 +59,58 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
 const projects = [
   {
-    name: "Bmmasi Portal",
+    name: "Jerryonyango Portal",
     technologies: "React (TypeScript, HTML, SCSS, JavaScript)",
     date: "Nov. 2024 - Present",
     description:
       "A responsive portfolio website showcasing my projects and skills, built with React and TypeScript.",
     links: {
       live: "https://bmmasi.com",
-      github: "https://github.com/branley1/portfolio-react",
+      github: "https://github.com/onyangojerry/portfolio-react",
     },
   },
   {
-    name: "JuaCode AI Coding Assistant",
+    name: "Botbot",
     technologies:
-      "React (HTML/CSS, JavaScript), Node.js/Express",
-    date: "Jan. 2025 - Present",
+      "React (Python, DistilBert), Node.js/Express",
+    date: "October. 2024 - Present",
     description:
-      "A full-stack, ChatGPT-like personal AI assitant coding application built with a responsive React frontend and an Express backend. Integrates the deepseek-r1 language model to generate intelligent responses, featuring autosave, dynamic chat renaming, shareable chat links, and a clean, modern UI with a collapsible sidebar.",
+      "Creating and training a functional bot that scraps data from a website in real time and answers with desired information. Has achieved a functionality accuracy of 96% so far. Plans to incorporate as pert of school website.",
     links: {
-      github: "https://github.com/branley1/juacode-ai",
+      github: "https://github.com/onyangojerry/botbot",
     },
   },
   {
-    name: "Moodi-fi",
+    name: "Word Simulation",
     technologies:
-      "React (TypeScript, HTML, SCSS, JavaScript), MongoDB, Spotify WebAPI, Gemini 2.0 API, Gemini 1.5 API",
+      "Java",
+    date: "October 2024 - October 2024",
+    description:
+      "Collaborated in building and training a model that identifies word similarities including synonyms and typos. Achieved a 95% accuracy, published model on GitHub. within the Swahili-speaking community.",
+    links: {
+      github: "https://github.com/pomonaCS159-fa2024/assignment-5-onyngo-etefa",
+    },
+  },
+  {
+    name: "25 Line Web Server",
+    technologies: "Rust, Docker,HTML",
     date: "Dec. 2024 - Present",
     description:
-      "Currently working on a tool that let's users login to their Spotify, get detailed summaries of their listening and generate mood playlists based on text (coming soon: multimodal).",
+      "Built a custom Rust HTTP server that processes incoming requests and serves index.html while responding with a 404 error for missing files; refined development processes by enabling rapid testing and troubleshooting for developers",
+
+      "Monitored the webserver processes through deployment identifying networking flow and possible issues improving my mastery for unix systems commands.",
     links: {
-      github: "https://github.com/branley1/moodi-fi",
+      github: "https://github.com/onyangojerry/webserver",
     },
   },
   {
-    name: "Deepseek-r1 with RAG",
-    technologies: "Python, Jupyter Notebook",
-    date: "Dec. 2024 - Present",
+    name: "Credit card Validator",
+    technologies: "Haskell",
+    date: "November 2023 - November 2023",
     description:
-      "Engineered a chatbot application leveraging the open-source Deepseek-r1 reasoning model to deliver context-rich, privacy-preserving local AI interactions using Knowledge Augmented Generation (KAG) framework.",
+      "Developed a robust credit card validation codebase in Haskell, incorporating advanced techniques like list manipulation and the Luhn Algorithm; minimized system downtime by ensuring 99.9percent uptime for accelerated transaction finance security",
     links: {
-      github: "https://github.com/branley1/deepseek-r1",
-    },
-  },
-  {
-    name: "Sentimental Analysis with GRUs",
-    technologies: "Python, TensorFlow, Keras",
-    date: "Mar. 2024 - May 2024",
-    description:
-      "A GRU-based neural network for emotion classification from text, achieving 93% accuracy on a dataset of 70,000 tweets.",
-    links: {
-      github: "https://github.com/branley1/Predicting-emotions-with-GRUs.git",
+      github: "https://github.com/onyangojerry/CreditCard",
     },
   },
   {
@@ -123,13 +125,13 @@ const projects = [
     },
   },
   {
-    name: "iOS Flashcard Application",
-    technologies: "Swift, Xcode, SnapKit",
-    date: "Feb. 2022 - Feb. 2024",
+    name: "Advanced NLP Parser",
+    technologies: "Java",
+    date: "October 2024 - October 2024",
     description:
-      "An iOS app for flashcard management with a responsive UI, local data persistence, and extensible architecture.",
+      "Collaborated in implementing CKY parsing algorithm that uses CNF and advanced Grammar Rules to break adn tag words in a sentence. Achieved a 96% accuracy and an algorithmically efficient time of under 5 minutes",
     links: {
-      github: "https://github.com/branley1/flashcard-update.git",
+      github: "https://github.com/pomonaCS159-fa2024/assignment-4-onyangofisherman",
     },
   },
   {
@@ -140,26 +142,6 @@ const projects = [
       "A practical, community-driven course on aligning small language models for domain-specific applications, providing a hands-on approach to working with small language models from initial training to production deployment.",
     links: {
       github: "https://github.com/branley1/smol-course.git",
-    },
-  },
-  {
-    name: "Simple Multi-Band Compressor Plugin",
-    technologies: "C++, JUCE, Xcode, Fork",
-    date: "Nov. 2024 - Present",
-    description:
-      "A simple multi-band compressor plugin built with JUCE, Xcode and C++ based off freeCodeCamp's tutorial.",
-    links: {
-      github: "https://github.com/branley1/",
-    },
-  },
-  {
-    name: "Google AI Studio Set up",
-    technologies:
-      "Gemini 2.0 API, Google AI Studio, Google Colab, Jupyter Notebook",
-    date: "Dec. 2024 - Dec. 2024",
-    description: "API setup for aistudio.google.com.",
-    links: {
-      github: "https://github.com/branley1/aistudio.google.com.git",
     },
   },
 ];
