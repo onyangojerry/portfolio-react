@@ -12,7 +12,7 @@ projects I've either worked on or been a part of. This repository contains two p
 2. Classic Portfolio (Classic Site)
    - Alternative portfolio design
    - Built with HTML/CSS/JS
-   - Accessible at: https://bmmasi.com/classic
+   - Accessible at: -------------
 
 ## Setup Instructions
 
