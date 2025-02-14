@@ -41,10 +41,10 @@ const ExperienceTimeline: React.FC = () => (
     <h2>Technical Experience</h2>
     <ExperienceItem
       role="
-      Software Engineering Intern"
-      company="Google LLC"
-      duration="May 2024 - Aug 2024"
-      location="Sunnyvale, CA"
+      Software Developer"
+      company="Pomona College"
+      duration="Jan 2025 - Present"
+      location="Claremont, CA"
       description={[
         "Enhanced a spam clustering tool by integrating advanced text and image embeddings, improving detection accuracy by 25% and addressing image-based spam challenges.",
 
