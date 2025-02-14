@@ -31,33 +31,31 @@ const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => (
           <li>
             <strong>Languages: </strong>
             <span>
-              C++, C, Python, Swift, Java, R, Go, OCaml, JavaScript, TypeScript, HTML/CSS
+              C++, C, Python, Rust, Java, R, Haskell, JavaScript, TypeScript, HTML/CSS
             </span>
           </li>
           <li>
             <strong>Frameworks: </strong>
             <span>
-              React Native, React, Next.js, Vue.js, Vite, Node.js, Flask, Django, SwiftUI
+              Flask, Django,
             </span>
           </li>
           <li>
             <strong>Database: </strong>
-            <span>MySQL, PostgreSQL, SQLAlchemy, MongoDB</span>
+            <span>MySQL, PostgreSQL, SQL, MongoDB</span>
           </li>
           <li>
             <strong>Tools: </strong>
             <span>
-              gRPC, REST APIs, Git/GitHub, RabbitMQ, Xcode, Apache Flume, Jupyter Notebook, GCP, AWS, WebAPIs, Google Colab, RPC APIs, Websocket APIs
+              REST APIs, Git/GitHub, Jupyter Notebook, GCP, AWS, WebAPIs, Google Colab, Websocket APIs
             </span>
           </li>
         </ul>
         <CardTitle>Current Courses (Spring 2025)</CardTitle>
         <ul className="future-courses">
-          <li>CPSC 071: Software Engineering</li>
-          <li>CPSC 075: Compilers</li>
-          <li>CPSC 099: Senior Comprehensive</li>
-          <li>MUSC 119: Composition</li>
-          <li>PHIL 053: Indian Philosophy</li>
+          <li>CPSC 181R: Real-Time Systems for Embeded Systems</li>
+          <li>CPSC 152: Neural Networks/ Deep Learning</li>
+          <li>CPSC 140: Algorithms</li>
         </ul>
         <h5>
           🎧
@@ -71,55 +69,44 @@ const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => (
           <li>
             <strong>Computer Science:</strong>
             <ul>
-              <li>CPSC 021: Intro to Computer Science</li>
-              <li>CPSC 031: Intro to Computer Systems</li>
-              <li>CPSC 035: Data Structures and Algorithms</li>
-              <li>CPSC 041: Algorithms</li>
-              <li>CPSC 046: Theory of Computation</li>
-              <li>CPSC 063: Artificial Intelligence</li>
-              <li>CPSC 066: Machine Learning</li>
+              <li>CPSC 051: Intro to Python with AI</li>
+              <li>CPSC 105: Computer Systems</li>
+              <li>CPSC 062: Data Structures and Advanced Programming</li>
+              <li>CPSC 054: Functional Programming and Discrete Math</li>
+              <li>CPSC 159: Natural Language Processing</li>
             </ul>
           </li>
           <li>
             <strong>Math & Statistics:</strong>
             <ul>
-              <li>MATH 015: Single-variable Calculus I</li>
-              <li>MATH 025: Single-variable Calculus II</li>
-              <li>MATH 027: Linear Algebra</li>
-              <li>MATH 039: Discrete Mathematics</li>
-              <li>STAT 011: Statistical Methods I</li>
+              <li>MATH 030: Single-variable Calculus I</li>
+              <li>MATH 031: Multi-variable Calculus II</li>
+              <li>MATH 032: Multi-variable Calculus III</li>
+              <li>MATH 062: Linear Algebra</li>
+              <li>MATH 052: Intro to Statistics</li>
             </ul>
           </li>
           <li>
-            <strong>Cognitive Science & Psychology:</strong>
+            <strong>Sociology and Social Sciences:</strong>
             <ul>
-              <li>COGS 001: Intro to Cognitive Science</li>
-              <li>PSYC 001: Intro to Psychology</li>
-              <li>PSYC 034: Psychology of Language</li>
-              <li>PSYC 033: Cognitive Psychology</li>
-              <li>PSYC 035: Social Psychology</li>
+              <li>SOC 001: Globalizations</li>
             </ul>
           </li>
           <li>
             <strong>Philosophy:</strong>
             <ul>
-              <li>PHIL 001A: Intro to Philosophy</li>
-              <li>PHIL 012B: Logic</li>
-              <li>PHIL 034: Marx and Marxism</li>
-              <li>PHIL 079: Poststructuralism</li>
+              <li>PHIL 001A: Epistemology</li>
             </ul>
           </li>
           <li>
             <strong>Music:</strong>
             <ul>
-              <li>MUSC 002B: Reading & Making Music: Basics of Notation</li>
-              <li>MUSC 003A: Intro to Music Technology</li>
+              <li>MUSC 002B: Intro to Group Piano</li>
             </ul>
           </li>
           <li>
             <strong>
-              Linguistics, Economics, Political Science, Theatre, English &
-              Religion:
+              Intro To Film
             </strong>
             <ul>
               <li>LING 001: Intro to Linguistics</li>
