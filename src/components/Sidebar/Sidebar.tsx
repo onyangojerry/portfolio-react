@@ -25,7 +25,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => (
           <li>
             <strong>Machine Learning: </strong>
             <span>
-              Scikit-learn, Keras, TensorFlow, PyTorch, XGBoost, OpenAI API, Hugging Face, Gemini 2.0 API
+              Scikit-learn, Keras, TensorFlow, PyTorch, OpenAI API, Hugging Face, Gemini 2.0 API
             </span>
           </li>
           <li>
@@ -37,7 +37,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => (
           <li>
             <strong>Frameworks: </strong>
             <span>
-              Flask, Django,
+              Flask, Django, SaltStack
             </span>
           </li>
           <li>
@@ -47,7 +47,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => (
           <li>
             <strong>Tools: </strong>
             <span>
-              REST APIs, Git/GitHub, Jupyter Notebook, GCP, AWS, WebAPIs, Google Colab, Websocket APIs
+              REST APIs, Git/GitHub, Jupyter Notebook, AWS, WebAPIs, Google Colab, Websocket APIs
             </span>
           </li>
         </ul>
@@ -93,9 +93,16 @@ const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => (
             </ul>
           </li>
           <li>
+            <strong>Art History:</strong>
+            <ul>
+              <li>ARHI86K: Building Empires</li>
+              <li>ARHI179: Modern Arch/Sustainability</li>
+            </ul>
+          </li>
+          <li>
             <strong>Philosophy:</strong>
             <ul>
-              <li>PHIL 001A: Epistemology</li>
+              <li>PHIL081: Epistemology</li>
             </ul>
           </li>
           <li>
@@ -105,16 +112,9 @@ const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => (
             </ul>
           </li>
           <li>
-            <strong>
-              Intro To Film
-            </strong>
+            <strong>Film</strong>
             <ul>
-              <li>LING 001: Intro to Linguistics</li>
-              <li>ECON 001: Intro to Economics</li>
-              <li>POLS 004: Intro to International Relations</li>
-              <li>ENGL 001F: FYS: Transition to College Writing (W)</li>
-              <li>THEA 002A: Acting I</li>
-              <li>RELG 073: Namaste America</li>
+              <li>MS 050: Intro to Film</li>
             </ul>
           </li>
         </ul>
@@ -125,8 +125,8 @@ const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => (
           className="sidebar-profile-image"
           loading="eager"
         />
-        <Card.Link href="https://linkedin.com/in/bmmasi1">LinkedIn</Card.Link>
-        <Card.Link href="https://github.com/branley1">GitHub</Card.Link>
+        <Card.Link href="https://www.linkedin.com/in/jerry-rawlings-onyango/">LinkedIn</Card.Link>
+        <Card.Link href="https://github.com/onyangojerry">GitHub</Card.Link>
       </Card.Body>
     </Card>
   </div>
