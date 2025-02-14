@@ -7,7 +7,7 @@ projects I've either worked on or been a part of. This repository contains two p
 1. Modern React Portfolio (Main Site)
    - Main portfolio site
    - Built with React + TypeScript
-   - Deployed at: https://bmmasi.com
+   - Deployed at: -----------
 
 2. Classic Portfolio (Classic Site)
    - Alternative portfolio design
@@ -85,7 +85,7 @@ This portfolio reflects my skills, experience, and passions. It includes:
 - Detailed sections like **About Me**, **Experience Timeline**, and **Projects**.
 - Clean and intuitive navigation to help visitors find what they are looking for.
 
-Explore the live version here: [**Bmmasi Portal**](https://bmmasi.com)
+Explore the live version here: --------------
 
 ---
 
