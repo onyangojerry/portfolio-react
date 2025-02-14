@@ -96,9 +96,7 @@ const projects = [
     technologies: "Rust, Docker,HTML",
     date: "Dec. 2024 - Present",
     description:
-      "Built a custom Rust HTTP server that processes incoming requests and serves index.html while responding with a 404 error for missing files; refined development processes by enabling rapid testing and troubleshooting for developers",
-
-      "Monitored the webserver processes through deployment identifying networking flow and possible issues improving my mastery for unix systems commands.",
+      "Built a custom Rust HTTP server that processes incoming requests and serves index.html while responding with a 404 error for missing files; refined development processes by enabling rapid testing and troubleshooting for developers.Monitored the webserver processes through deployment identifying networking flow and possible issues improving my mastery for unix systems commands.",
     links: {
       github: "https://github.com/onyangojerry/webserver",
     },
