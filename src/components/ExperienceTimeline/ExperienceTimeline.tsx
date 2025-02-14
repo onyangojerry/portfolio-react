@@ -59,7 +59,7 @@ const ExperienceTimeline: React.FC = () => (
       role="Junior Systems Analyst"
       company="Pomona College"
       duration="August 2024 - Present"
-      location="Swarthmore, PA"
+      location="Claremont, CA"
       description={[
         "Spearheaded automation of deployment and server updates by integrating Salt Project in the school’s IT infrastructure cutting server downtime by 80 percent.",
         
@@ -74,7 +74,7 @@ const ExperienceTimeline: React.FC = () => (
       role="IT help desk Technician"
       company="Pomona College"
       duration="August 2022 - Aug 2024"
-      location="Nairobi, Kenya"
+      location="Claremont, CA"
       description={[
         "Executed software upgrades and patch implementations, addressing an average of 35 IT-related tickets per week, improving system efficiency by 20%, and boosting user satisfaction in a high-demand environment.",
 
