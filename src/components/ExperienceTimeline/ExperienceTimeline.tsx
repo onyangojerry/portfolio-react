@@ -46,13 +46,13 @@ const ExperienceTimeline: React.FC = () => (
       duration="Jan 2025 - Present"
       location="Claremont, CA"
       description={[
-        "Enhanced a spam clustering tool by integrating advanced text and image embeddings, improving detection accuracy by 25% and addressing image-based spam challenges.",
+        "Developed a process monitoring system and deployed into dev serves to manage and mmonitor servers operating systems cutting down server management and malicious processes identification time by 70%.",
 
-        "Optimized ETL pipelines, reducing data processing time by 10% and ensuring 99.9% uptime with fault-tolerant backend solutions.",
+        "Implemented a server local real-time threat monitoring system which displayed logs on a dashboard for dev server management. Implemented a notification technology on the monitoring system which improved threat reaction time by 40%.",
 
         "Conducted code reviews and implemented unit tests in an agile environment, ensuring high-quality deliverables and seamless team collaboration.",
 
-        "Gained expertise in cloud computing, distributed systems, and data pipelines, with hands-on experience in C++, Go, SQL, and HTML/CSS.",
+        "Gained expertise in system security, distributed systems.",
       ]}
     />
     <ExperienceItem
@@ -61,16 +61,16 @@ const ExperienceTimeline: React.FC = () => (
       duration="August 2024 - Present"
       location="Swarthmore, PA"
       description={[
-        "Executed software upgrades and patch implementations, addressing an average of 35 IT-related tickets per week, improving system efficiency by 20%, and boosting user satisfaction in a high-demand environment.",
+        "Implemented Automation ",
       ]}
     />
     <ExperienceItem
-      role="Software Engineering Intern"
-      company="Amiva"
-      duration="May 2022 - Aug 2022"
+      role="IT help desk Technician"
+      company="Pomona College"
+      duration="August 2022 - Aug 2024"
       location="Nairobi, Kenya"
       description={[
-        "Collaborated with Amiva's Engineering team to design and implement a payment infrastructure using Python, Django, MySQL and RabbitMQ, improving transaction processing by 40% and over 18% improvement in uptime.",
+        "Executed software upgrades and patch implementations, addressing an average of 35 IT-related tickets per week, improving system efficiency by 20%, and boosting user satisfaction in a high-demand environment.",
       ]}
     />
     <ExperienceItem
