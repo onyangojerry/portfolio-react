@@ -46,7 +46,7 @@ const ExperienceTimeline: React.FC = () => (
       duration="Jan 2025 - Present"
       location="Claremont, CA"
       description={[
-        "Developed a process monitoring system and deployed into dev serves to manage and mmonitor servers operating systems cutting down server management and malicious processes identification time by 70%.",
+        "Developed a processess monitoring system and deployed into dev serves to manage and mmonitor servers operating systems cutting down server management and malicious processes identification time by 70%.",
 
         "Implemented a server local real-time threat monitoring system which displayed logs on a dashboard for dev server management. Implemented a notification technology on the monitoring system which improved threat reaction time by 40%.",
 
