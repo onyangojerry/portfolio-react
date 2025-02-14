@@ -50,17 +50,6 @@ const ExperienceTimeline: React.FC = () => (
 
       ]}
     />
-    <ExperienceItem
-      role="Resident Assistant"
-      company="Swarthmore College"
-      duration="Jul 2022 - Feb 2024"
-      location="Swarthmore, PA"
-      description={[
-        "Supervised 30+ residents each semester and organized academic/social programming events, acting as the primary liaison between students and college administration.",
-
-        "Demonstrated ethical leadership through confidential peer counseling, conflict resolution, and crisis management.",
-      ]}
-    />
    
   </section>
 );
