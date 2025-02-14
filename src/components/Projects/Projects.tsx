@@ -112,17 +112,6 @@ const projects = [
     },
   },
   {
-    name: "Multi-label Classification with k-NN",
-    technologies: "Python, Scikit-learn",
-    date: "Oct. 2023 - Dec. 2023",
-    description:
-      "A custom k-NN algorithm for multi-label classification with feature weighting, applied to molecular data analysis.",
-    links: {
-      github:
-        "https://github.com/branley1/Multi-label-Classification-with-k-Nearest-Neighbor.git",
-    },
-  },
-  {
     name: "Advanced NLP Parser",
     technologies: "Java",
     date: "October 2024 - October 2024",
@@ -130,16 +119,6 @@ const projects = [
       "Collaborated in implementing CKY parsing algorithm that uses CNF and advanced Grammar Rules to break adn tag words in a sentence. Achieved a 96% accuracy and an algorithmically efficient time of under 5 minutes",
     links: {
       github: "https://github.com/pomonaCS159-fa2024/assignment-4-onyangofisherman",
-    },
-  },
-  {
-    name: "A Smol Course",
-    technologies: "Python, Google Colab, OpenAI, Hugging Face",
-    date: "Dec. 2024 - Present",
-    description:
-      "A practical, community-driven course on aligning small language models for domain-specific applications, providing a hands-on approach to working with small language models from initial training to production deployment.",
-    links: {
-      github: "https://github.com/branley1/smol-course.git",
     },
   },
 ];
