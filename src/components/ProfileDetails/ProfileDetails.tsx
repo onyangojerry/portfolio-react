@@ -57,7 +57,7 @@ const ProfileDetails: React.FC = () => {
         <div className="hero-buttons mt-3">
           <Button
             variant="primary"
-            href="https://drive.google.com/file/d/1SrwJCrNLfMOLNtAwNVq5qT65MCIO15bS/view?usp=sharing"
+            href="https://drive.google.com/file/d/1hJ8Xbenah5kKZalzpzN16Gfj1QYaB48V/view?usp=share_link"
             target="_blank" /* Opens in new tab */
             rel="noopener noreferrer"
             onClick={handleDownloadResume}
