@@ -154,7 +154,7 @@ Want to see the code in action? Here's how to get the project up and running:
 ---
 
 ## **Deployment**
-This portfolio is hosted on **Netlify** using a custom domain. Here's the latest live version: [Bmmasi Portal](https://bmmasi.com).
+This portfolio is hosted on **Netlify** using a custom domain. Here's the latest live version: [Jerry Onyango](https://onyangojerry.netlify.app/).
 
 ---
 
