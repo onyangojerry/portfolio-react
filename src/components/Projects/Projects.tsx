@@ -65,7 +65,7 @@ const projects = [
     description:
       "A responsive portfolio website showcasing my projects and skills, built with React and TypeScript.",
     links: {
-      live: "https://bmmasi.com",
+      live: "https://onyangojerry.netlify.app/",
       github: "https://github.com/onyangojerry/portfolio-react",
     },
   },
