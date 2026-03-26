@@ -14,10 +14,16 @@ const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => (
     <Card className="sidebar-card">
       <h5>
         Current Mood 🎧
-        <a><i>
-            <img src="https://spotify-github-profile.vercel.app/api/view.svg?uid=xafrumx47d4e0kygeqpyqpsx8&redirect=true&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.kittinanx.com/api/view.svg?uid=xafrumx47d4e0kygeqpyqpsx8&redirect=true)"></img>
-            </i>
-          </a>
+        <a
+          href="https://open.spotify.com/user/xafrumx47d4e0kygeqpyqpsx8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://spotify-github-profile.kittinanx.com/api/view.svg?uid=xafrumx47d4e0kygeqpyqpsx8&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=false"
+            alt="Spotify Now Playing"
+          />
+        </a>
       </h5>
       <Card.Body>
         <Card.Title>Technical Skills</Card.Title>
