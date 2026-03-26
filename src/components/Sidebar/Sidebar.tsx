@@ -20,7 +20,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => (
           rel="noopener noreferrer"
         >
           <img
-            src="https://spotify-github-profile.kittinanx.com/api/view.svg?uid=xafrumx47d4e0kygeqpyqpsx8&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=false"
+            src="https://spotify-github-profile.kittinanx.com/api/view?uid=xafrumx47d4e0kygeqpyqpsx8&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=true&profanity=false&bar_color_cover=true"
             alt="Spotify Now Playing"
           />
         </a>
