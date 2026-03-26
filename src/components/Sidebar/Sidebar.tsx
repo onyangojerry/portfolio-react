@@ -66,7 +66,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className = "" }) => (
         <h5>
           🎧
             <a><i>
-              <img src="https://spotify-github-profile.kittinanx.com/api/view.svg?uid=hvoh3gwfkd3h64bzeal1fejmu&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.kittinanx.com/api/view.svg?uid=hvoh3gwfkd3h64bzeal1fejmu&redirect=true)"></img>
+              <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=xafrumx47d4e0kygeqpyqpsx8&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=true&profanity=false&bar_color_cover=true)](https://spotify-github-profile.kittinanx.com/api/view?uid=xafrumx47d4e0kygeqpyqpsx8&redirect=true)"></img>
             </i>
             </a>
         </h5>
