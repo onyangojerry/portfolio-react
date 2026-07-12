@@ -40,17 +40,14 @@ const ExperienceTimeline: React.FC = () => (
   <section id="extra-experience" className="my-4 experience-timeline">
     <h2>Extracurricular Experience</h2>
     <ExperienceItem
-      role="
-      Equity Global Scholars Mentor"
+      role="Equity Global Scholars Mentor"
       company="Equity Group KE"
-      duration="Jul 2021 - March 2022"
+      duration="July 2021 - March 2022"
       location="Nairobi, KE"
       description={[
-        "Guided a group of top performing students through the college application process helping them secure admissions to top colleges in the United States and other parts of the globe.",
-
+        "Guided a group of top-performing students through the college application process, helping them secure admission to top colleges in the United States and other parts of the world.",
       ]}
     />
-   
   </section>
 );
 

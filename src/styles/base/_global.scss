@@ -5,19 +5,56 @@
 @use '../components/index' as components;
 
 // Apply global styles
+body, html, #root {
+    min-height: 100%;
+}
+
 body, html {
-    background-color: var(--bg-color);
+    background:
+      linear-gradient(rgba(192, 192, 192, 0.76), rgba(192, 192, 192, 0.86)),
+      url("../../assets/images/backgrounds/oceans.jpeg"),
+      var(--bg-color);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--text-color);
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "Times New Roman", Times, serif;
     font-size: var(--font-size-base);
-    margin: 0.5rem;
+    margin: 0;
     padding: 0;
-    line-height: 1.2;
+    line-height: 1.35;
     overflow-x: hidden;
+}
+
+#root {
+  background: transparent;
+}
+
+[data-theme="dark"] body,
+[data-theme="dark"] html {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.92)),
+    url("../../assets/images/backgrounds/oceans.jpeg"),
+    var(--bg-color);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Apply transitions to all elements */
 * {
-  transition: background-color 0.15s ease-in-out;
+  box-sizing: border-box;
+  transition: none;
 }
 
+a {
+  color: var(--heading-color);
+  text-decoration: underline;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--text-color);
+}

@@ -50,9 +50,7 @@ const ProfileDetails: React.FC = () => {
       <div className="profile-info">
         <h1>Jerry Onyango</h1>
         <h4>
-          {" "}
-          I'm a Computer Science major minor at
-          Pomona College, graduating in May, 2026.{" "}
+          Computers do the metalic math. So, I love Algorithms!
         </h4>
         <div className="hero-buttons mt-3">
           <Button
@@ -62,8 +60,7 @@ const ProfileDetails: React.FC = () => {
             rel="noopener noreferrer"
             onClick={handleDownloadResume}
           >
-            {" "}
-            Download Resume
+            Resumè
           </Button>
           <Button
             variant="primary"
@@ -71,7 +68,7 @@ const ProfileDetails: React.FC = () => {
             target="_blank"
             onClick={handleMessageMe}
           >
-            Contact
+            Get to me - 
           </Button>
           <Button
             variant="outline-secondary"

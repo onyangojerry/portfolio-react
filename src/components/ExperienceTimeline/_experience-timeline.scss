@@ -1,50 +1,85 @@
 // src/components/ExperienceTimeline/_experience-timeline.scss
 
 .experience-timeline {
-    font-family: 'IBM Plex Mono', monospace; // Moved from inline style
-    padding-left: 0.5rem;
-    background-color: var(--bg-color);
+    padding: 1rem;
+    background-color: var(--surface-color);
     color: var(--text-color);
-    border-radius: 8px;
+    border-color: #ffffff #404040 #404040 #ffffff;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 0;
+    box-shadow: 5px 5px 0 var(--box-shadow-color);
   
     h2 {
       font-size: var(--font-size-subheading);
       color: var(--heading-color);
       font-weight: 700;
+      text-decoration: underline;
+      margin-bottom: 1rem;
     }
   
     .experience-item {
-      padding: 1rem;
-      background-color: var(--bg-color);
-      border-top-right-radius: 20px;
-      border-bottom-left-radius: 20px;
-      border-top-left-radius: 10px;
-      border-bottom-right-radius: 10px;
+      position: relative;
+      padding: 0.9rem 1rem 0.9rem 1.25rem;
+      background-color: var(--surface-muted);
+      border-color: #ffffff #606060 #606060 #ffffff;
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 0;
+      overflow: hidden;
+
+      & + .experience-item {
+        margin-top: 1rem;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 4px;
+        background: var(--heading-color);
+      }
   
       h4 {
         font-size: 1.25rem;
         color: var(--heading-color);
+        font-weight: 700;
+        margin-bottom: 0.3rem;
       }
   
       h5 {
         font-size: 1rem;
         color: var(--text-color);
+        margin-bottom: 0.4rem;
       }
   
       p {
         font-size: var(--font-size-body);
         line-height: 1.6;
+        color: var(--text-color);
   
         em {
           font-style: italic;
           color: var(--text-color);
         }
       }
+
+      ul {
+        margin-bottom: 0;
+        padding-left: 1.1rem;
+      }
+
+      li {
+        margin-bottom: 0.55rem;
+        color: var(--text-color);
+      }
     }
 
     .experience-item:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 1px 2px var(--box-shadow-color);
+      transform: none;
+      box-shadow: inset 2px 2px 0 var(--box-shadow-color);
       background-color: var(--card-color);
     }
   }

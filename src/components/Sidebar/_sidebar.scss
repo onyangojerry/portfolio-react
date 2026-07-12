@@ -1,25 +1,25 @@
 
 .sidebar {
-  font-family: 'IBM Plex Mono', monospace;
-  position: sticky; /* Fix sidebar to the viewport */
-  top: 0; /* Sticks to the top of it's container */
-  flex: 0 0 250px; /* flex-grow: 0, flex-shrink: 0, flex-basis: 250px */
-  background-color: var(--bg-color);
+  position: sticky;
+  top: 5rem;
+  flex: 0 0 280px;
+  background-color: var(--surface-color);
   color: var(--text-color);
   padding: 1rem;
   box-sizing: border-box;
-  width: 250px;
-  border-radius: 8px;
-  font-size: var(--font-size-body);
-  border: 0.1px dashed var(--box-shadow-color); /* Other options: inset, outset, groove, double, dashed, dotted */
+  width: 280px;
+  border-radius: 0;
+  font-size: 0.94rem;
+  border-color: #ffffff #404040 #404040 #ffffff;
+  border-style: solid;
+  border-width: 4px;
   margin: 0;
   overflow-y: auto;
-  margin-top: 1rem;
-  margin-left: -0.125rem;
+  max-height: calc(100vh - 7rem);
+  box-shadow: 5px 5px 0 var(--box-shadow-color);
 
   &:hover {
-    // transform: translateY(-2.5px);
-    box-shadow: 0 1px 2px var(--box-shadow-color);
+    box-shadow: 5px 5px 0 var(--box-shadow-color);
   }
 
   @media (max-width: 767px) {
@@ -38,7 +38,7 @@
   }
 
   .card-subtitle {
-    background-color: var(--bg-color);
+    background-color: var(--surface-color);
     opacity: 0.8;
   }
   
@@ -59,7 +59,7 @@
   .sidebar-card img {
     width: 100%;
     height: auto;
-    max-width: 250px;
+    max-width: 260px;
     display: block;
     margin: 0 auto;
     margin-bottom: 1rem;
@@ -67,7 +67,7 @@
   }
 
   .sidebar-card {
-    background-color: var(--bg-color);
+    background-color: transparent;
     width: 100%;
     margin: 0;
     text-align: left;
@@ -80,19 +80,22 @@
       }
   
     .card-title {
-      margin-top: 10px;
+      margin-top: 1.25rem;
       font-size: var(--font-size-subheading);
       color: var(--heading-color);
       font-weight: 700;
-      margin-left: 1rem;
+      text-decoration: underline;
+      margin-left: 0;
     }
 
     .card-link {
       color: var(--heading-color);
       font-size: 1rem;
+      font-weight: 700;
+      margin-right: 0.75rem;
 
       &:hover {
-        color: var(--heading-color);
+        color: var(--accent-color);
       }
     }
 
@@ -100,22 +103,47 @@
     h5 {
       color: var(--heading-color);
       font-size: var(--font-size-subsubheading);
-      font-weight: 700;
+      font-weight: 800;
       text-align: center;
-      margin: 0.5rem;
-      border-radius: 8px;
+      margin: 0 0 1rem;
+      border-radius: 0;
+      overflow: hidden;
 
       &:hover {
-        transform: translateY(-0.5px);
-        box-shadow: 0 1px 2px var(--box-shadow-color);
+        box-shadow: inset 2px 2px 0 var(--box-shadow-color);
       }
     }
   }
 
+  .skills-list {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .skills-list li {
+    padding: 0.65rem;
+    background-color: var(--surface-muted);
+    border-color: #ffffff #606060 #606060 #ffffff;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0;
+    margin-bottom: 0.65rem;
+  }
+
+  .skills-list strong {
+    display: block;
+    color: var(--heading-color);
+    margin-bottom: 0.25rem;
+  }
+
+  .skills-list span {
+    color: var(--muted-text-color);
+  }
+
   .course-highlight {
     font-size: 0.9rem;
-    padding: 0rem;
-    background-color: var(--card-color);
+    padding: 0;
+    background-color: transparent;
     margin-bottom: 0rem;
     margin-top: 0.5rem;
     list-style: none;
@@ -137,7 +165,8 @@
     list-style-position: outside;
     margin-left: 0;
     padding-left: 1.5em;
-    font-size: 0.8rem;
+    font-size: 0.86rem;
+    color: var(--muted-text-color);
   }
 
   /* Mobile version of the sidebar */
@@ -155,15 +184,19 @@
 
     &.active {
       display: block; // Show when active (dropdown)
-      background-color: var(--bg-color);
+    background-color: var(--bg-color);
     }
   }
 }
 
 .future-courses {
   font-size: 0.9rem;
-  padding-left: 1.5em;
-  background-color: var(--card-color);
+  padding: 0.65rem 0.65rem 0.65rem 1.5rem;
+  background-color: var(--surface-muted);
+  border-color: #ffffff #606060 #606060 #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0;
   margin-bottom: 0rem;
   margin-top: 0.5rem;
   list-style-type: square;
@@ -171,10 +204,11 @@
 }
 
 .sidebar-profile-image {
-  border-radius: 8px;
+  border-radius: 0;
   object-fit: cover;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
+  box-shadow: 4px 4px 0 var(--box-shadow-color);
 }
 
 .sidebar-course-image {

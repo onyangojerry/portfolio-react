@@ -31,11 +31,11 @@ const CustomNavbar: React.FC = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto navbar-links">
-          <Nav.Link href="#about">Who Am I? </Nav.Link>
-          <Nav.Link href="#experience">Technical Experience</Nav.Link>
-          <Nav.Link href="#extra-experience">Extracurricular Experience</Nav.Link>
+          <Nav.Link href="#about">I am ... </Nav.Link>
+          <Nav.Link href="#experience">Technnically I do, </Nav.Link>
+          <Nav.Link href="#extra-experience">Besides computing, I do;</Nav.Link>
           <Nav.Link href="#custom-projects">Projects</Nav.Link>
-          <Nav.Link href="/classic/index.html">🎨 Curious?</Nav.Link>
+          <Nav.Link href="/classic/index.html"> More Curious?</Nav.Link>
           {/*<Nav.Link href="#hobbies">Hobbies</Nav.Link>*/}
         </Nav>
         <Form.Check
